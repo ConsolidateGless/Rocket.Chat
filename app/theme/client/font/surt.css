@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'SurtRegular';
+  src: url('./Regular/Surt-Regular.woff2') format('woff2'),
+    url('./Regular/Surt-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SurtRegularOblique';
+  src: url('./RegularOblique/Surt-RegularOblique.woff2') format('woff2'),
+    url('./RegularOblique/Surt-RegularOblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SurtMedium';
+  src: url('./Medium/Surt-Medium.woff2') format('woff2'),
+    url('./Medium/Surt-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SurtBold';
+  src: url('./Bold/Surt-Bold.woff2') format('woff2'),
+    url('./Bold/Surt-Bold.woff') format('woff');
+}
+
+html, body {
+  font-family: Surt;
+}

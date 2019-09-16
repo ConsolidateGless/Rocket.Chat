@@ -86,7 +86,7 @@
 	align-items: stretch;
 
 	&:hover {
-		background-color: var(--sidebar-item-hover-background);
+		background-color: var(--sidebar-item-hover-background);		
 
 		& .sidebar-item__menu {
 			display: flex;
@@ -94,14 +94,14 @@
 	}
 
 	&--active {
-		background-color: var(--sidebar-item-active-background);
+		background-color: var(--sidebar-item-active-background);		
 	}
 
 	&--unread,
 	&--mention {
 		color: var(--sidebar-item-unread-color);
-
-		font-weight: var(--sidebar-item-unread-font-weight);
+		/*	font-weight: var(--sidebar-item-unread-font-weight);*/
+		font-weight: 700;
 	}
 
 	&__popup-active {

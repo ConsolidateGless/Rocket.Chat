@@ -1,5 +1,6 @@
 :root {
 	/*
+	/*
 	 * Color palette
 	 */
 	--color-dark-100: #0c0d0f;
@@ -42,7 +43,8 @@
 	--rc-color-alert-light: var(--color-dark-yellow);
 	--rc-color-success: var(--color-green);
 	--rc-color-success-light: #25d198;
-	--rc-color-button-primary: var(--color-blue);
+	/*--rc-color-button-primary: var(--color-blue);*/
+	--rc-color-button-primary: var(--gless-color-primary);
 	--rc-color-button-primary-light: var(--color-dark-blue);
 	--rc-color-alert-message-primary: var(--color-blue);
 	--rc-color-alert-message-primary-background: #f1f6ff;
@@ -51,7 +53,8 @@
 	--rc-color-alert-message-warning: #d52d24;
 	--rc-color-alert-message-warning-background: #fff3f3;
 	--rc-color-primary: var(--color-dark);
-	--rc-color-primary-darkest: var(--color-darkest);
+	/*--rc-color-primary-darkest: var(--color-darkest);*/
+	--rc-color-primary-darkest: var(--gless-color-list-item-background);
 	--rc-color-primary-dark: var(--color-dark-medium);
 	--rc-color-primary-light: var(--color-gray);
 	--rc-color-primary-light-medium: var(--color-gray-medium);
@@ -218,12 +221,16 @@
 	--sidebar-item-thumb-size: 18px;
 	--sidebar-item-thumb-size-medium: 27px;
 	--sidebar-item-thumb-size-extended: 36px;
-	--sidebar-item-text-color: var(--rc-color-primary-light);
+	/*--sidebar-item-text-color: var(--rc-color-primary-light);*/
+	--sidebar-item-text-color: var(--gless-color-text);
 	--sidebar-item-background: inherit;
-	--sidebar-item-hover-background: var(--rc-color-primary-darkest);
-	--sidebar-item-active-background: var(--rc-color-primary-dark);
+	/*--sidebar-item-hover-background: var(--rc-color-primary-darkest);*/
+	--sidebar-item-hover-background: var(--gless-color-list-item-background);
+	/*--sidebar-item-active-background: var(--rc-color-primary-dark);*/
+	--sidebar-item-active-background: var(--gless-color-list-item-background);
 	--sidebar-item-active-color: var(--sidebar-item-text-color);
-	--sidebar-item-unread-color: var(--rc-color-content);
+	/*--sidebar-item-unread-color: var(--rc-color-content);*/
+	--sidebar-item-unread-color: var(--gless-color-text);
 	--sidebar-item-unread-font-weight: 600;
 	--sidebar-item-popup-background: var(--rc-color-primary-dark);
 	--sidebar-item-user-status-size: 6px;
@@ -253,11 +260,15 @@
 
 	/*
 	* Rooms list
-	*/
-	--rooms-list-title-color: var(--color-gray);
-	--rooms-list-title-text-size: 0.75rem;
-	--rooms-list-empty-text-color: var(--color-gray);
-	--rooms-list-empty-text-size: 0.75rem;
+	*/	
+	/*--rooms-list-title-color: var(--color-gray);*/
+	--rooms-list-title-color: var(--gless-color-text);
+	/*--rooms-list-title-text-size: 0.75rem;*/
+	--rooms-list-title-text-size: 1rem;
+	/*--rooms-list-empty-text-color: var(--color-gray);*/
+	--rooms-list-empty-text-color: var(--gless-color-text);
+	/*--rooms-list-empty-text-size: 0.75rem;*/
+	--rooms-list-empty-text-size: 1rem;
 	--rooms-list-padding: var(--sidebar-default-padding);
 	--rooms-list-small-padding: var(--sidebar-small-default-padding);
 

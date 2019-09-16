@@ -1,3 +1,13 @@
+/* Customized Version of main.css */
+/* */
+
+/* imports Themes */
+@import 'themes/light.css';
+@import 'themes/dark.css';
+
+/* imports Font Surt */
+@import 'font/surt.css';
+
 /* General */
 @import 'imports/general/reset.css';
 @import 'imports/general/variables.css';

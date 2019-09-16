@@ -72,6 +72,14 @@ const toolbarButtons = (user) => [{
 	},
 },
 {
+name: t('Bell'),
+	icon: 'gless-bell',
+	action: () => {
+		menu.close();
+		FlowRouter.go('directory');
+	},
+},
+{
 	name: t('View_mode'),
 	icon: () => viewModeIcon[getUserPreference(user, 'sidebarViewMode') || 'condensed'],
 	action: (e) => {
