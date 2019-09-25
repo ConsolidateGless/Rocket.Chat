@@ -1,6 +1,5 @@
 :root {
 	/*
-	/*
 	 * Color palette
 	 */
 	--color-dark-100: #0c0d0f;
@@ -12,8 +11,7 @@
 	--color-dark-10: #e0e5e8;
 	--color-dark-05: #f1f2f4;
 	--color-dark-blue: #175cc4;
-	/*--color-blue: #1d74f5;*/
-	--color-blue: var(--gless-color-primary);
+	--color-blue: #1d74f5;
 	--color-light-blue: #4eb2f5;
 	--color-lighter-blue: #e8f2ff;
 	--color-purple: #861da8;
@@ -277,6 +275,7 @@
 	--rooms-list-padding: var(--sidebar-default-padding);
 	--rooms-list-small-padding: var(--sidebar-small-default-padding);
 
+	
 	/*
 	* Chip
 	*/
@@ -305,7 +304,7 @@
 	*/
 	--mention-link-radius: 10px;
 	--mention-link-background: var(--color-lighter-blue);
-	--mention-link-text-color: var(--gless-color-primary);
+	--mention-link-text-color: var(--color-dark-blue);
 	--mention-link-me-background: var(--color-dark-blue);
 	--mention-link-me-text-color: var(--color-white);
 	--mention-link-group-background: var(--rc-color-primary-dark);
@@ -327,7 +326,7 @@
 	--message-box-container-border-radius: var(--border-radius);
 	--message-box-editing-color: #fff5df;
 	--message-box-popover-title-text-color: var(--gless-color-text);
-	--message-box-popover-title-text-size: 1rem;;
+	--message-box-popover-title-text-size: 1rem;
 
 	/*
 	* Header
@@ -361,8 +360,9 @@
 	--popover-background: var(--color-white);
 	--popover-column-min-width: 130px;
 	--popover-column-padding: 1rem;
-	--popover-title-color: var(--gless-color-text;
-	--popover-title-text-size: 0.75rem;
+	--popover-title-color: var(--gless-color-text);
+	--popover-title-text-size: 14px;
+	/*--popover-title-text-size: .75rem;*/
 	--popover-item-color: var(--gless-color-text);
 	--popover-item-text-size: 14px;
 	--popover-divider-height: 1px;

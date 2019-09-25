@@ -58,11 +58,12 @@ export const toolbarSearch = {
 
 const toolbarButtons = (user) => [{
 	name: t('Search'),
-	icon: 'magnifier',
+	icon: 'gless-search',
 	action: () => {
 		toolbarSearch.show(false);
 	},
 },
+/*
 {
 	name: t('Directory'),
 	icon: 'discover',
@@ -71,14 +72,7 @@ const toolbarButtons = (user) => [{
 		FlowRouter.go('directory');
 	},
 },
-{
-name: t('Bell'),
-	icon: 'gless-bell',
-	action: () => {
-		menu.close();
-		FlowRouter.go('directory');
-	},
-},
+
 {
 	name: t('View_mode'),
 	icon: () => viewModeIcon[getUserPreference(user, 'sidebarViewMode') || 'condensed'],
@@ -158,9 +152,10 @@ name: t('Bell'),
 		popover.open(config);
 	},
 },
+*/
 {
 	name: t('Create_new'),
-	icon: 'edit-rounded',
+	icon: 'gless-new-message',
 	condition: () => hasAtLeastOnePermission(['create-c', 'create-p']),
 	action: (e) => {
 		const createChannel = (e) => {
@@ -228,7 +223,7 @@ name: t('Bell'),
 },
 {
 	name: t('Options'),
-	icon: 'menu',
+	icon: 'gless-more-options',
 	condition: () => AccountBox.getItems().length || hasAtLeastOnePermission(['manage-emoji', 'manage-integrations', 'manage-oauth-apps', 'manage-own-integrations', 'manage-selected-settings', 'manage-sounds', 'view-logs', 'view-privileged-setting', 'view-room-administration', 'view-statistics', 'view-user-administration', 'access-setting-permissions']),
 	action: (e) => {
 		let adminOption;
