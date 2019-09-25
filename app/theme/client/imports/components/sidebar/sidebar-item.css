@@ -105,7 +105,8 @@
 	}
 
 	&__popup-active {
-		background-color: var(--sidebar-item-popup-background);
+		/*background-color: var(--sidebar-item-popup-background);*/
+		background-color: transparent;
 	}
 
 	&__link {
@@ -171,7 +172,7 @@
 		border-radius: var(--sidebar-item-user-status-radius);
 
 		&--online {
-			background-color: var(--status-online);
+			background-color: var(--status-online);			
 		}
 
 		&--away {
@@ -270,12 +271,14 @@
 
 		font-size: 12px;
 		line-height: normal;
+		color: var(--gless-color-grey1);
 	}
 
 	&__time {
 		margin: 0 3px;
 
-		color: var(--sidebar-item-text-color);
+		/*color: var(--sidebar-item-text-color);*/
+		color: var(--gless-color-grey1);
 
 		font-size: 10px;
 	}
@@ -297,7 +300,9 @@
 		justify-content: center;
 
 		&-icon {
-			fill: var(--color-white);
+			/*fill: var(--color-white);*/
+			color: var(--gless-color-grey1);
+
 		}
 	}
 }

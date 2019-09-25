@@ -65,8 +65,8 @@ html.rtl .attachment {
 	}
 
 	& .attachment-title {
-
-		color: #1d74f5;
+		/*color: #1d74f5;*/
+		color: var(--gless-color-primary);
 
 		font-size: 1.02rem;
 		font-weight: 500;

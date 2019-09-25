@@ -19,6 +19,8 @@
 
 	background-color: var(--sidebar-background);
 
+	border-right: 1px solid var(--gless-color-border);	
+
 	&-light {
 		position: absolute;
 
@@ -30,7 +32,8 @@
 
 		height: 100%;
 
-		background-color: var(--sidebar-background-light);
+		background-color: var(--sidebar-background-light);		
+		border-right: 1px solid var(--gless-color-border);	
 	}
 
 	&-wrap {

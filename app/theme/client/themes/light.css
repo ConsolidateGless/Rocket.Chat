@@ -1,4 +1,4 @@
-.theme-light {
+:root {
   --gless-background: #FFF;
   --gless-background-2: #F2F2F2;  
   
@@ -19,19 +19,19 @@
   --gless-color-green: #7CC163;
   --gless-color-blue: #4138d6;
 
-  --gless-color-input-border: var(--color-grey2);
-  --gless-color-input-autofill: var(--color-grey2);
-  --gless-color-border: var(--color-grey2);
-  --gless-color-border-2: var(--color-grey2);
-  --gless-color-border-3: var(--color-grey3);
-  --gless-color-border-4: var(--color-white);
-  --gless-color-divider: var(--color-grey3);
-  --gless-color-divider-text: var(--color-grey1);
+  --gless-color-input-border: var(--gless-color-grey2);
+  --gless-color-input-autofill: var(--gless-color-grey2);
+  --gless-color-border: var(--gless-color-grey2);
+  --gless-color-border-2: var(--gless-color-grey2);
+  --gless-color-border-3: var(--gless-color-grey3);
+  --gless-color-border-4: var(--gless-color-white);
+  --gless-color-divider: var(--gless-color-grey3);
+  --gless-color-divider-text: var(--gless-color-grey1);
   
-  --gless-color-icon: var(--color-grey1);
-  --gless-color-icon-navigation: var(--color-grey0);
-  --gless-color-icon-inactive: var(--color-grey2);
-  --gless-color-icon-list: var(--color-grey0);
+  --gless-color-icon: var(--gless-color-grey1);
+  --gless-color-icon-navigation: var(--gless-color-grey0);
+  --gless-color-icon-inactive: var(--gless-color-grey2);
+  --gless-color-icon-list: var(--gless-color-grey0);
 
-  --gless-color-list-item-background: #E2E2E2 /*var(--color-grey2);*/
+  --gless-color-list-item-background: var(--gless-color-grey2);
 }

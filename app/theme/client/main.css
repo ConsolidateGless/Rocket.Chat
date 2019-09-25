@@ -3,10 +3,9 @@
 
 /* imports Themes */
 @import 'themes/light.css';
-@import 'themes/dark.css';
 
 /* imports Font Surt */
-@import 'font/surt.css';
+@import 'assets/font/surt.css';
 
 /* General */
 @import 'imports/general/reset.css';
@@ -68,3 +67,6 @@
 
 /* RTL */
 @import 'imports/general/rtl.css';
+
+/* Gless Overridings */
+@import 'imports/gless/gless.css';

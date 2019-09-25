@@ -87,7 +87,8 @@
 		width: 200px;
 
 		& .rc-input__element {
-			background-color: var(--sidebar-background);
+			/*background-color: var(--sidebar-background);*/
+			background-color: #fff!important;
 		}
 
 		& .rc-input__icon {
@@ -144,7 +145,7 @@
 			justify-content: flex-end;
 
 			&-button {
-				margin: 0 6px;
+				/*margin: 0 6px;*/
 			}
 		}
 	}

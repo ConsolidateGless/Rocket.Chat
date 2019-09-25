@@ -133,7 +133,8 @@ textarea.rc-input__element {
 
 		& .rc-input {
 			&__element {
-				border-color: var(--input-error-color);
+				/*border-color: var(--input-error-color);*/
+				border-color: var(--input-border-color);		
 			}
 		}
 	}

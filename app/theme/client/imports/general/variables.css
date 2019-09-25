@@ -12,7 +12,8 @@
 	--color-dark-10: #e0e5e8;
 	--color-dark-05: #f1f2f4;
 	--color-dark-blue: #175cc4;
-	--color-blue: #1d74f5;
+	/*--color-blue: #1d74f5;*/
+	--color-blue: var(--gless-color-primary);
 	--color-light-blue: #4eb2f5;
 	--color-lighter-blue: #e8f2ff;
 	--color-purple: #861da8;
@@ -41,7 +42,8 @@
 	--rc-color-error-light: #e1364c;
 	--rc-color-alert: var(--color-yellow);
 	--rc-color-alert-light: var(--color-dark-yellow);
-	--rc-color-success: var(--color-green);
+	/*--rc-color-success: var(--color-green);*/
+	--rc-color-success: var(--gless-color-green);
 	--rc-color-success-light: #25d198;
 	/*--rc-color-button-primary: var(--color-blue);*/
 	--rc-color-button-primary: var(--gless-color-primary);
@@ -74,9 +76,9 @@
 	--flex-tab-webrtc-width: 400px;
 	--flex-tab-webrtc-2-width: 850px;
 	--user-image-square: 20px;
-	--border: 2px;
-	--border-radius: 2px;
-	--status-online: var(--rc-color-success);
+	--border: 1px;
+	--border-radius: 5px;	
+	--status-online: var(--rc-color-success);	
 	--status-away: var(--rc-color-alert);
 	--status-busy: var(--rc-color-error);
 	--status-invisible: var(--color-gray-medium);
@@ -136,10 +138,12 @@
 	--input-font-size: 0.875rem;
 	--input-title-text-size: var(--input-font-size);
 	--input-title-color: #2d343d;
-	--input-text-color: var(--color-dark-medium);
-	--input-placeholder-color: var(--color-gray-medium);
-	--input-icon-color: var(--color-dark);
-	--input-border-color: var(--color-gray-light);
+	--input-text-color: #000;
+	/*--input-placeholder-color: var(--color-gray-medium);*/
+	--input-placeholder-color: var(--gless-color-grey1);
+	--input-icon-color: var(--gless-color-text);
+	/*--input-border-color: var(--color-gray-light);*/
+	--input-border-color: var(--gless-color-input-border);
 	--input-border-width: var(--border);
 	--input-border-radius: var(--border-radius);
 	--input-description-text-color: var(--color-gray);
@@ -179,7 +183,8 @@
 	*/
 	--sidebar-width: 280px;
 	--sidebar-small-width: 90%;
-	--sidebar-background: var(--rc-color-primary);
+	/*--sidebar-background: var(--rc-color-primary);*/
+	--sidebar-background: #fff;
 	--sidebar-background-hover: var(--rc-color-primary-dark);
 	--sidebar-background-light: var(--rc-color-primary-lightest);
 	--sidebar-background-light-hover: var(--rc-color-primary-light);
@@ -224,8 +229,8 @@
 	/*--sidebar-item-text-color: var(--rc-color-primary-light);*/
 	--sidebar-item-text-color: var(--gless-color-text);
 	--sidebar-item-background: inherit;
-	/*--sidebar-item-hover-background: var(--rc-color-primary-darkest);*/
-	--sidebar-item-hover-background: var(--gless-color-list-item-background);
+	--sidebar-item-hover-background: var(--rc-color-primary-darkest);
+	/*--sidebar-item-hover-background: var(--gless-color-list-item-background);*/
 	/*--sidebar-item-active-background: var(--rc-color-primary-dark);*/
 	--sidebar-item-active-background: var(--gless-color-list-item-background);
 	--sidebar-item-active-color: var(--sidebar-item-text-color);
@@ -300,7 +305,7 @@
 	*/
 	--mention-link-radius: 10px;
 	--mention-link-background: var(--color-lighter-blue);
-	--mention-link-text-color: var(--color-dark-blue);
+	--mention-link-text-color: var(--gless-color-primary);
 	--mention-link-me-background: var(--color-dark-blue);
 	--mention-link-me-text-color: var(--color-white);
 	--mention-link-group-background: var(--rc-color-primary-dark);
@@ -316,12 +321,13 @@
 	--message-box-user-typing-color: var(--color-gray);
 	--message-box-user-typing-text-size: 0.75rem;
 	--message-box-user-typing-user-color: var(--color-dark);
-	--message-box-container-border-color: var(--color-gray-medium);
-	--message-box-container-border-width: var(--border);
+	--message-box-container-border-color: var(--gless-color-grey2);
+	/*--message-box-container-border-width: var(--border);*/
+	--message-box-container-border-width: 1px;
 	--message-box-container-border-radius: var(--border-radius);
 	--message-box-editing-color: #fff5df;
-	--message-box-popover-title-text-color: var(--color-gray);
-	--message-box-popover-title-text-size: 0.75rem;
+	--message-box-popover-title-text-color: var(--gless-color-text);
+	--message-box-popover-title-text-size: 1rem;;
 
 	/*
 	* Header
@@ -355,18 +361,18 @@
 	--popover-background: var(--color-white);
 	--popover-column-min-width: 130px;
 	--popover-column-padding: 1rem;
-	--popover-title-color: var(--color-dark);
+	--popover-title-color: var(--gless-color-text;
 	--popover-title-text-size: 0.75rem;
-	--popover-item-color: var(--color-dark);
-	--popover-item-text-size: 0.875rem;
-	--popover-divider-height: 2px;
-	--popover-divider-color: var(--color-gray-light);
+	--popover-item-color: var(--gless-color-text);
+	--popover-item-text-size: 14px;
+	--popover-divider-height: 1px;
+	--popover-divider-color: var(--gless-color-border);
 
 	/*
 	* Tooltip
 	*/
-	--tooltip-background: var(--color-darkest);
-	--tooltip-text-color: var(--color-white);
+	--tooltip-background: var(--gless-color-grey3);
+	--tooltip-text-color: var(--gless-color-text);
 	--tooltip-text-size: 0.75rem;
 	--tooltip-radius: var(--border-radius);
 
