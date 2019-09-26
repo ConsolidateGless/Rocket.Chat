@@ -138,7 +138,7 @@
 	--input-title-color: #2d343d;
 	--input-text-color: #000;
 	/*--input-placeholder-color: var(--color-gray-medium);*/
-	--input-placeholder-color: var(--gless-color-grey1);
+	--input-placeholder-color: var(--gless-color-placeholder);
 	--input-icon-color: var(--gless-color-text);
 	/*--input-border-color: var(--color-gray-light);*/
 	--input-border-color: var(--gless-color-input-border);
@@ -183,9 +183,14 @@
 	--sidebar-small-width: 90%;
 	/*--sidebar-background: var(--rc-color-primary);*/
 	--sidebar-background: #fff;
+	/*
 	--sidebar-background-hover: var(--rc-color-primary-dark);
 	--sidebar-background-light: var(--rc-color-primary-lightest);
 	--sidebar-background-light-hover: var(--rc-color-primary-light);
+	*/
+	--sidebar-background-hover: #fff;
+	--sidebar-background-light: #fff;
+	--sidebar-background-light-hover: #fff;
 	--sidebar-default-padding: 24px;
 	--sidebar-small-default-padding: 16px;
 	--sidebar-extra-small-default-padding: 12px;
@@ -196,7 +201,8 @@
 	* Sidebar flex
 	*/
 	--sidebar-flex-search-background: var(--color-white);
-	--sidebar-flex-search-placeholder-color: var(--color-gray);
+	/*--sidebar-flex-search-placeholder-color: var(--color-gray);*/
+	--sidebar-flex-search-placeholder-color: var(--gless-color-placeholder);
 
 	/*
 	* Sidebar Account
@@ -259,7 +265,8 @@
 	/*
 	* Toolbar
 	*/
-	--toolbar-placeholder-color: var(--color-gray);
+	/*--toolbar-placeholder-color: var(--color-gray);*/
+	--toolbar-placeholder-color: var(--gless-color-placeholder);
 
 	/*
 	* Rooms list
@@ -314,7 +321,8 @@
 	* Message box
 	*/
 	--message-box-text-size: var(--input-font-size);
-	--message-box-placeholder-color: var(--color-gray-medium);
+	/*--message-box-placeholder-color: var(--color-gray-medium);*/
+	--message-box-placeholder-color: var(--gless-color-placeholder);
 	--message-box-markdown-color: var(--color-gray);
 	--message-box-markdown-hover-color: var(--color-dark);
 	--message-box-user-typing-color: var(--color-gray);

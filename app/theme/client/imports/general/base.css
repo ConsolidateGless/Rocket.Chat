@@ -111,7 +111,7 @@ button {
 	}
 
 	& .tab-button-icon {
-		color: var(--rc-color-primary-dark);
+		color: var(--gless-color-icon);
 
 		font-size: 20px;
 

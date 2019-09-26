@@ -27,11 +27,12 @@
   --gless-color-border-4: var(--gless-color-white);
   --gless-color-divider: var(--gless-color-grey3);
   --gless-color-divider-text: var(--gless-color-grey1);
+  --gless-color-placeholder: var(--gless-color-grey1);
   
   --gless-color-icon: var(--gless-color-grey1);
   --gless-color-icon-navigation: var(--gless-color-grey0);
   --gless-color-icon-inactive: var(--gless-color-grey2);
   --gless-color-icon-list: var(--gless-color-grey0);
 
-  --gless-color-list-item-background: var(--gless-color-grey2);
+  --gless-color-list-item-background: var(--gless-color-grey3);
 }
