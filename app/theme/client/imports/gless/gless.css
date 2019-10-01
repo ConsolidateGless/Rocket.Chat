@@ -12,7 +12,7 @@
 }
 
 .rooms-list__toolbar-search {
-  top: 55px;
+  top: 55px!important;
   left: 0;
 }
 
@@ -103,6 +103,7 @@
   display: flex;
   align-items: center;
   padding: 12px 24px;
+  height: 56px;
 }
 .gless-sidebar-logo {
   flex: 1;
