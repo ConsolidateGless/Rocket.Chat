@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 @font-face {
   font-family: 'SurtRegular';
@@ -24,5 +25,6 @@
 }
 
 html, body {
-  font-family: 'Surt';
+  /*font-family: 'Surt';*/
+  font-family: 'Mansalva', cursive;
 }
