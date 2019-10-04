@@ -68,7 +68,7 @@ export function userCanAccessAvatar({ headers = {}, query = {} }) {
 	return true;
 }
 
-const getFirstLetter = (name) => name.replace(/[^A-Za-z0-9]/g, '').substr(0, 1).toUpperCase();
+const getFirstLetter = (name) => name.replace(/[^A-Za-z0-9]/g, '').substr(0, 3).toUpperCase();
 
 export const renderSVGLetters = (username, viewSize = 200) => {
 	let color = '';
@@ -82,9 +82,15 @@ export const renderSVGLetters = (username, viewSize = 200) => {
 		initials = getFirstLetter(username);
 	}
 
-	const fontSize = viewSize / 1.6;
-
-	return `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 ${ viewSize } ${ viewSize }\">\n<rect width=\"100%\" height=\"100%\" fill=\"${ color }\"/>\n<text x=\"50%\" y=\"50%\" dy=\"0.36em\" text-anchor=\"middle\" pointer-events=\"none\" fill=\"#ffffff\" font-family=\"'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'\" font-size="${ fontSize }">\n${ initials }\n</text>\n</svg>`;
+	const fontSize = (viewSize / 1.5) / 1.6;
+	console.log({viewSize, color, fontSize, initials, username});
+	return `
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${ viewSize } ${ viewSize }">
+	<rect width="100%" height="100%" fill="${ color }"/>
+		<text x="50%" y="50%" dy="0.36em" text-anchor="middle" pointer-events="none" fill="#ffffff" font-weight="bold" font-family="'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'" font-size="${ fontSize }">
+			${ initials }
+		</text>
+	</svg>`;
 };
 
 const getCacheTime = (cacheTime) => cacheTime || settings.get('Accounts_AvatarCacheTime');
