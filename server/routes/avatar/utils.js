@@ -83,7 +83,7 @@ export const renderSVGLetters = (username, viewSize = 200) => {
 	}
 
 	const fontSize = (viewSize / 1.5) / 1.6;
-	console.log({viewSize, color, fontSize, initials, username});
+
 	return `
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${ viewSize } ${ viewSize }">
 	<rect width="100%" height="100%" fill="${ color }"/>
