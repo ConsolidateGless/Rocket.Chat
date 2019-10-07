@@ -68,7 +68,7 @@ export function userCanAccessAvatar({ headers = {}, query = {} }) {
 	return true;
 }
 
-const getFirstLetter = (name) => name.replace(/[^A-Za-z0-9]/g, '').substr(0, 3).toUpperCase();
+const getFirstLetter = (name) => name.replace(/[^A-Za-z0-9]/g, '').substr(0, 1).toUpperCase();
 
 export const renderSVGLetters = (username, viewSize = 200) => {
 	let color = '';
@@ -79,7 +79,8 @@ export const renderSVGLetters = (username, viewSize = 200) => {
 		initials = username;
 	} else {
 		color = getAvatarColor(username);
-		initials = getFirstLetter(username);
+		//initials = getFirstLetter(username);
+		initials = username.substr(0, 3).toUpperCase();
 	}
 
 	const fontSize = (viewSize / 1.5) / 1.6;
