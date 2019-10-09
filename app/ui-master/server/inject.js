@@ -155,8 +155,8 @@ Settings.find({ _id: /theme-color-rc/i }, { fields: { value: 1 } }).observe({
 	changed: renderDynamicCssList,
 });
 
-//injectIntoBody('icons', Assets.getText('public/icons.svg'));
-injectIntoBody('icons', Assets.getText('public/gless/icons.svg'));
+injectIntoBody('icons', Assets.getText('public/icons.svg'));
+//injectIntoBody('icons', Assets.getText('public/gless/icons.svg'));
 
 injectIntoBody('page-loading-div', `
 <div id="initial-page-loading" class="page-loading">
