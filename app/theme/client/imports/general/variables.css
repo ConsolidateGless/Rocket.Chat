@@ -142,8 +142,10 @@
 	--button-primary-background: var(--rc-color-button-primary);
 	--button-primary-text-color: var(--color-white);
 	--button-cancel-color: var(--rc-color-error);
-	--button-secondary-background: var(--color-gray-medium);
-	--button-secondary-text-color: var(--color-dark-medium);
+	/*--button-secondary-background: var(--color-gray-medium);*/
+	--button-secondary-background: var(--gless-color-primary)!important;
+	/*--button-secondary-text-color: var(--color-dark-medium);*/
+	--button-secondary-text-color: var(--color-white)!important;
 
 	/*
 	* Forms - Input
@@ -161,7 +163,7 @@
 	--input-border-radius: var(--border-radius);
 	--input-description-text-color: var(--color-gray);
 	--input-description-text-size: var(--input-font-size);
-	--input-error-color: var(--rc-color-error);
+	--input-error-color: var(--luecolor-error);
 
 	/*
 	* Forms - popup list

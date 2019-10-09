@@ -732,7 +732,7 @@ settings.addGroup('General', function() {
 		i18nDescription: 'Site_Url_Description',
 		public: true,
 	});
-	this.add('Site_Name', 'Rocket.Chat', {
+	this.add('Site_Name', 'Gless Chat', {
 		type: 'string',
 		public: true,
 		wizard: {
@@ -760,7 +760,7 @@ settings.addGroup('General', function() {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('First_Channel_After_Login', '', {
+	this.add('First_Channel_After_Login', 'general', {
 		type: 'string',
 		public: true,
 	});
@@ -1261,15 +1261,15 @@ settings.addGroup('Layout', function() {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
-			public: true,
+			public: false,
 		});
 		this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
-			public: true,
+			public: false,
 		});
-		return this.add('Layout_Sidenav_Footer', '<a href="/home"><img src="assets/logo.png"/></a>', {
+		return this.add('Layout_Sidenav_Footer', '<a href="/home"><img src="images/logo/logo.png"/></a>', {
 			type: 'code',
 			code: 'text/html',
 			public: true,
