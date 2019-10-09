@@ -1,13 +1,6 @@
-<template name="sideNav">	
+<template name="sideNav">
 	<aside class="sidebar sidebar--{{sidebarViewMode}} {{#if sidebarHideAvatar}}sidebar--hide-avatar{{/if}}" role="navigation">
-		<div class="gless-sidebar-header">
-			<div class="gless-sidebar-logo">
-				<a href="/home">
-					<img src="/assets/gless-logo.svg" width="62" height="auto" />
-				</a>
-			</div>
-			{{> sidebarHeader }}
-		</div>
+		{{> sidebarHeader }}
 		{{#if loggedInUser}}
 			<div class="unread-rooms background-primary-action-color color-primary-action-contrast top-unread-rooms hidden">
 				{{_ "More_unreads"}} <i class="icon-up-big"></i>
@@ -30,10 +23,8 @@
 				</div>
 			</div>
 		{{/if}}
-		
-		<!--
+
 		<footer class="sidebar__footer">{{{footer}}}</footer>
-		-->
 	</aside>
 	<div class="sidebar-wrap"></div>
 </template>

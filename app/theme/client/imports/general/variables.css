@@ -36,31 +36,46 @@
 	--color-gray-lightest: #f2f3f5;
 	--color-black: #000000;
 	--color-white: #ffffff;
-	--rc-color-error: var(--color-red);
-	--rc-color-error-light: #e1364c;
-	--rc-color-alert: var(--color-yellow);
-	--rc-color-alert-light: var(--color-dark-yellow);
+	/*--rc-color-error: var(--color-red);*/
+	--rc-color-error: var(--gless-color-primary)!important;	
+	/*--rc-color-error-light: #e1364c;*/
+	--rc-color-error-light: var(--gless-color-primary-lighten-35)!important;
+	/*--rc-color-alert: var(--color-yellow);*/
+	--rc-color-alert: var(--gless-color-primary-lighten-35)!important;	
+	/*--rc-color-alert-light: var(--color-dark-yellow);*/
+	--rc-color-alert-light: var(--gless-color-primary-lighten-35)!important;	
 	/*--rc-color-success: var(--color-green);*/
-	--rc-color-success: var(--gless-color-green);
-	--rc-color-success-light: #25d198;
+	--rc-color-success: var(--gless-color-green)!important;
+	/*--rc-color-success-light: #25d198;*/
+	--rc-color-success-light: var(--gless-color-green)!important;
 	/*--rc-color-button-primary: var(--color-blue);*/
-	--rc-color-button-primary: var(--gless-color-primary);
-	--rc-color-button-primary-light: var(--color-dark-blue);
-	--rc-color-alert-message-primary: var(--color-blue);
-	--rc-color-alert-message-primary-background: #f1f6ff;
-	--rc-color-alert-message-secondary: #7ca52b;
+	--rc-color-button-primary: var(--gless-color-primary)!important;	
+	/*--rc-color-button-primary-light: var(--color-dark-blue);*/
+	--rc-color-button-primary-light: var(--gless-color-primary)!important;
+	/*--rc-color-alert-message-primary: var(--color-blue);*/
+	--rc-color-alert-message-primary: var(--gless-color-primary)!important;
+	/*--rc-color-alert-message-primary-background: #f1f6ff;*/
+	--rc-color-alert-message-primary-background: #E2E2E2;	
+	/*--rc-color-alert-message-secondary: #7ca52b;*/
+	--rc-color-alert-message-secondary: var(--gless-color-green);
 	--rc-color-alert-message-secondary-background: #fafff1;
 	--rc-color-alert-message-warning: #d52d24;
 	--rc-color-alert-message-warning-background: #fff3f3;
-	--rc-color-primary: var(--color-dark);
+	/*--rc-color-primary: var(--color-dark);*/
+	--rc-color-primary: var(--gless-color-primary)!important;
 	/*--rc-color-primary-darkest: var(--color-darkest);*/
-	--rc-color-primary-darkest: var(--gless-color-list-item-background);
-	--rc-color-primary-dark: var(--color-dark-medium);
-	--rc-color-primary-light: var(--color-gray);
-	--rc-color-primary-light-medium: var(--color-gray-medium);
-	--rc-color-primary-lightest: var(--color-gray-lightest);
+	--rc-color-primary-darkest: var(--gless-color-list-item-background)!important;
+	/*--rc-color-primary-dark: var(--color-dark-medium);*/
+	--rc-color-primary-dark: var(--gless-color-primary)!important;
+	/*--rc-color-primary-light: var(--color-gray);*/
+	--rc-color-primary-light: var(--gless-color-primary)!important;
+	/*--rc-color-primary-light-medium: var(--color-gray-medium);*/
+	--rc-color-primary-light-medium: var(--gless-color-primary)!important;;
+	/*--rc-color-primary-lightest: var(--color-gray-lightest);*/
+	--rc-color-primary-lightest: var(--gless-color-primary)!important;
 	--rc-color-content: var(--color-white);
-	--rc-color-link-active: var(--rc-color-button-primary);
+	/*--rc-color-link-active: var(--rc-color-button-primary);*/
+	--rc-color-link-active: var(--gless-color-text)!important;
 
 	/*
 	* General
@@ -179,6 +194,7 @@
 	/*
 	* Sidebar
 	*/
+	/*--sidebar-width: 280px;*/
 	--sidebar-width: 280px;
 	--sidebar-small-width: 90%;
 	/*--sidebar-background: var(--rc-color-primary);*/
@@ -231,7 +247,7 @@
 	--sidebar-item-thumb-size-medium: 27px;
 	--sidebar-item-thumb-size-extended: 36px;
 	/*--sidebar-item-text-color: var(--rc-color-primary-light);*/
-	--sidebar-item-text-color: var(--gless-color-text);
+	--sidebar-item-text-color: var(--gless-color-icon);
 	--sidebar-item-background: inherit;
 	--sidebar-item-hover-background: var(--rc-color-primary-darkest);
 	/*--sidebar-item-hover-background: var(--gless-color-list-item-background);*/

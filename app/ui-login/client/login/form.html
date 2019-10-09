@@ -117,10 +117,8 @@
 				<div class="rc-button__group rc-button__group--vertical">
 					<button class='rc-button rc-button--primary login'>{{btnLoginSave}}</button>
 					{{#if state 'login'}}
-						{{#if registrationAllowed}}
-
-						<button type="button" class="rc-button rc-button--nude register">{{_ 'Register'}}</button>
-
+						{{#if registrationAllowed}}						
+							<button type="button" class="rc-button rc-button--nude register">{{_ 'Register'}}</button>						
 						{{else}}
 						{{#if linkReplacementText}}
 						<div class="register-link-replacement">
@@ -128,8 +126,8 @@
 						</div>
 						{{/if}}
 						{{/if}}
-						{{#if passwordResetAllowed}}
-							<button type="button" class="rc-button rc-button--nude forgot-password">{{_ 'Forgot_password'}}</button>
+						{{#if passwordResetAllowed}}						
+							<button type="button" class="rc-button rc-button--nude forgot-password">{{_ 'Forgot_password'}}</button>						
 						{{/if}}
 					{{/if}}
 				</div>
