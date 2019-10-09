@@ -1,6 +1,10 @@
 /* overriding existing elements */
 /**/
 
+/* login page */
+.full-page {
+  background-color: var(--gless-background);
+}
 
 .rc-icon {
   fill: var(--gless-color-icon);
@@ -21,7 +25,16 @@
   color: var(--gless-color-icon);
 }
 
-/*sidebar-header*/
+.rc-header--room,
+.sidebar__header {
+  height: 58px;
+}
+
+.sidebar__toolbar {
+  margin-left: 4px;
+}
+
+/*sidebar-header
 .sidebar__header {
   padding: 0;
   margin: 0;
@@ -38,14 +51,16 @@
   margin-left: 12px;
   color: var(--gless-color-icon);
 }
+*/
 
-/* toolbar */
+/* toolbar 
 .toolbar {
   width: auto;
   top: 10px;
   left: 0;    
   right:0;  
 }
+*/
 /*
 .toolbar .rc-input__element {
   background: var(--gless-background);  
@@ -53,6 +68,7 @@
   color: var(--gless-color-text);
 }
 */
+
 .toolbar .rc-input__wrapper {
   color: var(--gless-color-icon);
 }
