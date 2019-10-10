@@ -79,12 +79,19 @@ export const renderSVGLetters = (username, viewSize = 200) => {
 		initials = username;
 	} else {
 		color = getAvatarColor(username);
-		initials = getFirstLetter(username);
+		//initials = getFirstLetter(username);
+		initials = username.substr(0, 3).toUpperCase();
 	}
 
-	const fontSize = viewSize / 1.6;
+	const fontSize = (viewSize / 1.5) / 1.6;
 
-	return `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 ${ viewSize } ${ viewSize }\">\n<rect width=\"100%\" height=\"100%\" fill=\"${ color }\"/>\n<text x=\"50%\" y=\"50%\" dy=\"0.36em\" text-anchor=\"middle\" pointer-events=\"none\" fill=\"#ffffff\" font-family=\"'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'\" font-size="${ fontSize }">\n${ initials }\n</text>\n</svg>`;
+	return `
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${ viewSize } ${ viewSize }">
+	<rect width="100%" height="100%" fill="${ color }"/>
+		<text x="50%" y="50%" dy="0.36em" text-anchor="middle" pointer-events="none" fill="#ffffff" font-weight="bold" font-family="'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'" font-size="${ fontSize }">
+			${ initials }
+		</text>
+	</svg>`;
 };
 
 const getCacheTime = (cacheTime) => cacheTime || settings.get('Accounts_AvatarCacheTime');
