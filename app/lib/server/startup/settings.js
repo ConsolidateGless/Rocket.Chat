@@ -32,15 +32,15 @@ settings.addGroup('Accounts', function() {
 			value: true,
 		},
 	});
-	this.add('Accounts_AllowUserProfileChange', true, {
+	this.add('Accounts_AllowUserProfileChange', false, {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('Accounts_AllowUserAvatarChange', true, {
+	this.add('Accounts_AllowUserAvatarChange', false, {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('Accounts_AllowRealNameChange', true, {
+	this.add('Accounts_AllowRealNameChange', false, {
 		type: 'boolean',
 		public: true,
 	});
@@ -48,15 +48,15 @@ settings.addGroup('Accounts', function() {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('Accounts_AllowUsernameChange', true, {
+	this.add('Accounts_AllowUsernameChange', false, {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('Accounts_AllowEmailChange', true, {
+	this.add('Accounts_AllowEmailChange', false, {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('Accounts_AllowPasswordChange', true, {
+	this.add('Accounts_AllowPasswordChange', false, {
 		type: 'boolean',
 		public: true,
 	});
@@ -111,10 +111,10 @@ settings.addGroup('Accounts', function() {
 		public: true,
 	});
 	this.section('Registration', function() {
-		this.add('Accounts_Send_Email_When_Activating', true, {
+		this.add('Accounts_Send_Email_When_Activating', false, {
 			type: 'boolean',
 		});
-		this.add('Accounts_Send_Email_When_Deactivating', true, {
+		this.add('Accounts_Send_Email_When_Deactivating', false, {
 			type: 'boolean',
 		});
 		this.add('Accounts_DefaultUsernamePrefixSuggestion', 'user', {
@@ -159,7 +159,7 @@ settings.addGroup('Accounts', function() {
 		this.add('Accounts_UseDNSDomainCheck', false, {
 			type: 'boolean',
 		});
-		this.add('Accounts_RegistrationForm', 'Public', {
+		this.add('Accounts_RegistrationForm', 'Disabled', {
 			type: 'select',
 			public: true,
 			values: [
@@ -179,7 +179,7 @@ settings.addGroup('Accounts', function() {
 			type: 'string',
 			secret: true,
 		});
-		this.add('Accounts_RegistrationForm_LinkReplacementText', 'New user registration is currently disabled', {
+		this.add('Accounts_RegistrationForm_LinkReplacementText', '', {
 			type: 'string',
 			public: true,
 		});
@@ -194,7 +194,7 @@ settings.addGroup('Accounts', function() {
 				value: true,
 			},
 		});
-		this.add('Accounts_PasswordReset', true, {
+		this.add('Accounts_PasswordReset', false, {
 			type: 'boolean',
 			public: true,
 		});
@@ -221,7 +221,7 @@ settings.addGroup('Accounts', function() {
 			public: true,
 			i18nLabel: 'Notification_Duration',
 		});
-		this.add('Accounts_Default_User_Preferences_audioNotifications', 'mentions', {
+		this.add('Accounts_Default_User_Preferences_audioNotifications', 'all', {
 			type: 'select',
 			values: [
 				{
@@ -239,7 +239,7 @@ settings.addGroup('Accounts', function() {
 			],
 			public: true,
 		});
-		this.add('Accounts_Default_User_Preferences_desktopNotifications', 'mentions', {
+		this.add('Accounts_Default_User_Preferences_desktopNotifications', 'all', {
 			type: 'select',
 			values: [
 				{
@@ -257,7 +257,7 @@ settings.addGroup('Accounts', function() {
 			],
 			public: true,
 		});
-		this.add('Accounts_Default_User_Preferences_mobileNotifications', 'mentions', {
+		this.add('Accounts_Default_User_Preferences_mobileNotifications', 'all', {
 			type: 'select',
 			values: [
 				{
@@ -330,7 +330,7 @@ settings.addGroup('Accounts', function() {
 			public: true,
 			i18nLabel: 'Group_by_Type',
 		});
-		this.add('Accounts_Default_User_Preferences_sidebarViewMode', 'medium', {
+		this.add('Accounts_Default_User_Preferences_sidebarViewMode', 'extended', {
 			type: 'select',
 			values: [
 				{
@@ -354,7 +354,7 @@ settings.addGroup('Accounts', function() {
 			public: true,
 			i18nLabel: 'Hide_Avatars',
 		});
-		this.add('Accounts_Default_User_Preferences_sidebarShowUnread', false, {
+		this.add('Accounts_Default_User_Preferences_sidebarShowUnread', true, {
 			type: 'boolean',
 			public: true,
 			i18nLabel: 'Unread_on_top',
@@ -383,7 +383,7 @@ settings.addGroup('Accounts', function() {
 			public: true,
 			i18nLabel: 'Enter_Behaviour',
 		});
-		this.add('Accounts_Default_User_Preferences_messageViewMode', 0, {
+		this.add('Accounts_Default_User_Preferences_messageViewMode', 1, {
 			type: 'select',
 			values: [
 				{
@@ -402,7 +402,7 @@ settings.addGroup('Accounts', function() {
 			public: true,
 			i18nLabel: 'MessageBox_view_mode',
 		});
-		this.add('Accounts_Default_User_Preferences_emailNotificationMode', 'mentions', {
+		this.add('Accounts_Default_User_Preferences_emailNotificationMode', 'nothing', {
 			type: 'select',
 			values: [
 				{
@@ -711,7 +711,7 @@ settings.addGroup('OAuth', function() {
 });
 
 settings.addGroup('General', function() {
-	this.add('Show_Setup_Wizard', 'pending', {
+	this.add('Show_Setup_Wizard', 'completed', {
 		type: 'select',
 		public: true,
 		values: [
@@ -987,7 +987,7 @@ settings.addGroup('Message', function() {
 		type: 'int',
 		public: true,
 	});
-	this.add('Message_MaxAllowedSize', 5000, {
+	this.add('Message_MaxAllowedSize', 20000, {
 		type: 'int',
 		public: true,
 	});
@@ -1236,34 +1236,39 @@ settings.addGroup('Push', function() {
 
 settings.addGroup('Layout', function() {
 	this.section('Content', function() {
-		this.add('Layout_Home_Title', 'Home', {
+		this.add('Layout_Home_Title', '', {
 			type: 'string',
 			public: true,
 		});
-		this.add('Layout_Home_Body', '<p>Welcome to Rocket.Chat!</p>\n<p>The Rocket.Chat desktops apps for Windows, macOS and Linux are available to download <a title="Rocket.Chat desktop apps" href="https://rocket.chat/download" target="_blank" rel="noopener">here</a>.</p><p>The native mobile app, Rocket.Chat,\n  for Android and iOS is available from <a title="Rocket.Chat on Google Play" href="https://play.google.com/store/apps/details?id=chat.rocket.android" target="_blank" rel="noopener">Google Play</a> and the <a title="Rocket.Chat on the App Store" href="https://itunes.apple.com/app/rocket-chat/id1148741252" target="_blank" rel="noopener">App Store</a>.</p>\n<p>For further help, please consult the <a title="Rocket.Chat Documentation" href="https://rocket.chat/docs/" target="_blank" rel="noopener">documentation</a>.</p>\n<p>If you\'re an admin, feel free to change this content via <strong>Administration</strong> &rarr; <strong>Layout</strong> &rarr; <strong>Home Body</strong>. Or clicking <a title="Home Body Layout" href="/admin/Layout">here</a>.</p>', {
+		//this.add('Layout_Home_Body', '<p>Welcome to Rocket.Chat!</p>\n<p>The Rocket.Chat desktops apps for Windows, macOS and Linux are available to download <a title="Rocket.Chat desktop apps" href="https://rocket.chat/download" target="_blank" rel="noopener">here</a>.</p><p>The native mobile app, Rocket.Chat,\n  for Android and iOS is available from <a title="Rocket.Chat on Google Play" href="https://play.google.com/store/apps/details?id=chat.rocket.android" target="_blank" rel="noopener">Google Play</a> and the <a title="Rocket.Chat on the App Store" href="https://itunes.apple.com/app/rocket-chat/id1148741252" target="_blank" rel="noopener">App Store</a>.</p>\n<p>For further help, please consult the <a title="Rocket.Chat Documentation" href="https://rocket.chat/docs/" target="_blank" rel="noopener">documentation</a>.</p>\n<p>If you\'re an admin, feel free to change this content via <strong>Administration</strong> &rarr; <strong>Layout</strong> &rarr; <strong>Home Body</strong>. Or clicking <a title="Home Body Layout" href="/admin/Layout">here</a>.</p>', {
+		this.add('', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: true,
 		});
-		this.add('Layout_Terms_of_Service', 'Terms of Service <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
+		//this.add('Layout_Terms_of_Service', 'Terms of Service <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
+		this.add('Layout_Terms_of_Service', '', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: true,
 		});
-		this.add('Layout_Login_Terms', 'By proceeding you are agreeing to our <a href="terms-of-service">Terms of Service</a>, <a href="privacy-policy">Privacy Policy</a> and <a href="legal-notice">Legal Notice</a>.', {
+		//this.add('Layout_Login_Terms', 'By proceeding you are agreeing to our <a href="terms-of-service">Terms of Service</a>, <a href="privacy-policy">Privacy Policy</a> and <a href="legal-notice">Legal Notice</a>.', {
+		this.add('Layout_Login_Terms', '', {
 			type: 'string',
 			multiline: true,
 			public: true,
 		});
-		this.add('Layout_Privacy_Policy', 'Privacy Policy <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
+		//this.add('Layout_Privacy_Policy', 'Privacy Policy <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
+		this.add('Layout_Privacy_Policy', '', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: false,
 		});
-		this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
+		//this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
+		this.add('Layout_Legal_Notice', '', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
@@ -1306,7 +1311,7 @@ settings.addGroup('Layout', function() {
 			type: 'boolean',
 			public: true,
 		});
-		this.add('UI_Use_Real_Name', false, {
+		this.add('UI_Use_Real_Name', true, {
 			type: 'boolean',
 			public: true,
 		});
@@ -1402,7 +1407,7 @@ settings.addGroup('Logs', function() {
 
 settings.addGroup('Setup_Wizard', function() {
 	this.section('Organization_Info', function() {
-		this.add('Organization_Type', '', {
+		this.add('Organization_Type', 'enterprise', {
 			type: 'select',
 			values: [
 				{
@@ -1434,7 +1439,7 @@ settings.addGroup('Setup_Wizard', function() {
 				order: 1,
 			},
 		});
-		this.add('Industry', '', {
+		this.add('Industry', 'other', {
 			type: 'select',
 			values: [
 				{
@@ -1543,7 +1548,7 @@ settings.addGroup('Setup_Wizard', function() {
 				order: 2,
 			},
 		});
-		this.add('Size', '', {
+		this.add('Size', '0', {
 			type: 'select',
 			values: [
 				{
@@ -1584,7 +1589,7 @@ settings.addGroup('Setup_Wizard', function() {
 				order: 3,
 			},
 		});
-		this.add('Country', '', {
+		this.add('Country', 'worldwide', {
 			type: 'select',
 			values: [
 				{
@@ -2560,7 +2565,7 @@ settings.addGroup('Setup_Wizard', function() {
 				order: 5,
 			},
 		});
-		this.add('Server_Type', '', {
+		this.add('Server_Type', 'privateTeam', {
 			type: 'select',
 			values: [
 				{
@@ -2577,10 +2582,10 @@ settings.addGroup('Setup_Wizard', function() {
 				order: 2,
 			},
 		});
-		this.add('Allow_Marketing_Emails', true, {
+		this.add('Allow_Marketing_Emails', false, {
 			type: 'boolean',
 		});
-		this.add('Register_Server', true, {
+		this.add('Register_Server', false, {
 			type: 'boolean',
 		});
 		this.add('Organization_Email', '', {

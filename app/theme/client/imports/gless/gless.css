@@ -13,19 +13,6 @@ body {
   max-width: 260px;
 }
 
-/* modify login page:
-register button, 
-forgot password button,
-login terms
-footer */
-.login-terms,
-.rc-button--nude.register,
-.rc-button--nude.forgot-password,
-.full-page footer {
-  display: none;
-}
-
-
 .rc-old #login-card {
   max-width: 400px;
   margin-top: 32px;  
