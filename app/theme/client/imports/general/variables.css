@@ -418,4 +418,52 @@
 	*/
 	--badge-size: 14px;
 	--badge-font-size: 0.625rem;
+
+	/*
+	* custom overridings
+	*/
+	--rcx-button-primary-background-color: var(--gless-color-primary)!important;
+	--rcx-button-primary-disabled-background-color: var(--gless-color-primary-disabled)!important;
+	--rcx-button-primary-hover-background-color: var(--gless-color-primary)!important;
+
+	--rcx-button-primary-active-background-color: var(--gless-color-primary)!important;	
+	--rcx-button-primary-active-border-color: var(--gless-color-primary-disabled)!important;
+	--rcx-button-primary-active-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+	--rcx-button-primary-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-button-primary-focus-border-color: var(--gless-color-primary-disabled)!important;
+	--rcx-button-primary-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+	--rcx-input-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-input-focus-shadow: var(--gless-color-primary-lighten-35)!important;
+	--rcx-input-focus-caret-color: var(--gless-color-primary)!important;
+	--rcx-input-focus-icon-color: var(--gless-color-primary)!important;	
+
+	--rcx-radio-button-checked-hover-background-color: var(--gless-color-primary)!important;
+	--rcx-radio-button-checked-background-color: var(--gless-color-primary)!important;
+	--rcx-radio-button-checked-border-color: var(--gless-color-primary)!important;
+
+	--rcx-radio-button-checked-active-background-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-active-border-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-active-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+	--rcx-radio-button-checked-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+
+	--rcx-check-box-checked-background-color: var(--gless-color-primary)!important;
+	--rcx-check-box-checked-hover-background-color: var(--gless-color-primary)!important;	
+
+	--rcx-check-box-checked-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-checked-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-checked-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;	
+
+	--rcx-check-box-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;		
+
+	--rcx-check-box-checked-active-background-color: var(--gless-color-primary)!important;
+	--rcx-check-box-checked-active-border-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-checked-active-shadow-color: var(--gless-color-primary-lighten-35)!important;
 }
