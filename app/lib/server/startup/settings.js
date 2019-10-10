@@ -354,7 +354,7 @@ settings.addGroup('Accounts', function() {
 			public: true,
 			i18nLabel: 'Hide_Avatars',
 		});
-		this.add('Accounts_Default_User_Preferences_sidebarShowUnread', true, {
+		this.add('Accounts_Default_User_Preferences_sidebarShowUnread', false, {
 			type: 'boolean',
 			public: true,
 			i18nLabel: 'Unread_on_top',
