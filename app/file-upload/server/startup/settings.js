@@ -11,8 +11,8 @@ settings.addGroup('FileUpload', function() {
 		public: true,
 		i18nDescription: 'FileUpload_MaxFileSizeDescription',
 	});
-
-	this.add('FileUpload_MediaTypeWhiteList', 'image/*,audio/*,video/*,application/zip,application/x-rar-compressed,application/pdf,text/plain,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document', {
+//image/*,audio/*,video/*,application/zip,application/x-rar-compressed,application/pdf,text/plain,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document
+	this.add('FileUpload_MediaTypeWhiteList', '', {
 		type: 'string',
 		public: true,
 		i18nDescription: 'FileUpload_MediaTypeWhiteListDescription',
@@ -24,7 +24,7 @@ settings.addGroup('FileUpload', function() {
 		i18nDescription: 'FileUpload_ProtectFilesDescription',
 	});
 
-	this.add('FileUpload_Storage_Type', 'GridFS', {
+	this.add('FileUpload_Storage_Type', 'FileSystem', {
 		type: 'select',
 		values: [{
 			key: 'GridFS',
@@ -183,7 +183,7 @@ settings.addGroup('FileUpload', function() {
 	});
 
 	this.section('File System', function() {
-		this.add('FileUpload_FileSystemPath', '', {
+		this.add('FileUpload_FileSystemPath', '/app/uploads', {
 			type: 'string',
 			enableQuery: {
 				_id: 'FileUpload_Storage_Type',

@@ -58,7 +58,8 @@
 		font-size: 0.875rem;
 
 		&::placeholder {
-			color: var(--rc-color-primary-light-medium);
+			/*color: var(--rc-color-primary-light-medium);*/
+			color: var(--gless-color-placeholder);
 		}
 	}
 }

@@ -27,6 +27,7 @@ body {
 	height: 100%;
 	padding: 0;
 
+	color: var(--gless-color-text);
 	background-color: var(--rc-color-primary);
 
 	font-size: var(--text-small-size);
@@ -110,7 +111,7 @@ button {
 	}
 
 	& .tab-button-icon {
-		color: var(--rc-color-primary-dark);
+		color: var(--gless-color-icon);
 
 		font-size: 20px;
 

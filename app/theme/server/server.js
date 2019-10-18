@@ -26,7 +26,8 @@ export const theme = new class {
 	constructor() {
 		this.variables = {};
 		this.packageCallbacks = [];
-		this.files = ['server/colors.less'];
+		//this.files = ['server/colors.less'];
+		this.files = ['server/gless/colors.less', ];
 		this.customCSS = '';
 		settings.add('css', '');
 		settings.addGroup('Layout');

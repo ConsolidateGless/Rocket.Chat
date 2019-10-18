@@ -21,7 +21,8 @@
 
 	transition: all 0.3s;
 
-	color: var(--rc-color-primary-light);
+	/*color: var(--rc-color-primary-light);*/
+	color: var(--gless-color-text);
 
 	border-bottom: 2px solid transparent;
 

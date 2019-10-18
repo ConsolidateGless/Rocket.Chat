@@ -1,7 +1,8 @@
 .rc-table {
 	width: 100%;
 
-	color: var(--rc-color-primary-light);
+	/*color: var(--rc-color-primary-light);*/
+	color: var(--gless-color-grey1);
 
 	font-size: 0.875rem;
 
@@ -208,7 +209,8 @@
 
 	text-align: left;
 
-	color: var(--rc-color-primary-light);
+	/*color: var(--rc-color-primary-light);*/
+	color: var(--gless-color-text);
 
 	font-size: 0.75rem;
 	font-weight: 500;

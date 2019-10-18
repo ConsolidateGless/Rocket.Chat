@@ -1,0 +1,135 @@
+/* overriding existing elements */
+/**/
+
+body {
+  -webkit-font-smoothing: initial;
+}
+
+/* login page */
+.full-page {
+  background-color: var(--gless-background);
+}
+.full-page.logo {
+  max-width: 260px;
+}
+
+.rc-old #login-card {
+  max-width: 400px;
+  margin-top: 32px;  
+}
+
+.rc-icon {
+  fill: var(--gless-color-icon);
+}
+/* room */
+.rooms-list {
+  border-top: 1px solid var(--gless-color-border);
+  padding-top: 16px;
+}
+
+.rooms-list__empty-room {
+  color: var(--gless-color-grey1);
+}
+.rooms-list__toolbar-search {
+  top: 60px!important;
+  left: 0;
+  width: 289px!important;
+}
+
+.rc-room-actions__action, 
+.rc-room-actions__more-action {
+  color: var(--gless-color-icon);
+}
+
+.rc-table-icon,
+.rc-table-title {
+  color: var(--gless-color-black);
+}
+
+.rc-table tbody tr:not(.table-no-click):not(.table-no-pointer):hover {
+  background-color: var(--gless-color-grey2)!important;
+}
+
+.sidebar__header {
+  height: 59px;
+}
+
+.sidebar-item__name {
+  color: var(--gless-color-black);
+}
+
+.rc-header--room {
+  height: 60px;
+}
+
+.sidebar__toolbar {
+  margin-left: 4px;
+}
+
+
+.toolbar .rc-input__wrapper {
+  color: var(--gless-color-icon);
+}
+
+/*popover*/
+.rc-popover__title {
+  text-transform: none;
+}
+.rc-popover__item-text {
+  color: var(--gless-color-text);
+}
+.rc-popover__icon {
+  color: var(--gless-color-icon);
+}
+
+/* message */
+.message.new-day::before {
+  background-color: #fff !important;
+  color: var(--gless-color-grey1);
+}
+
+
+/* message links, at file download */
+.message a,
+.attachment-download-icon,
+.collapse-switch
+ {
+  color: var(--gless-color-text)!important;
+}
+
+.background-info-font-color {
+  background-color: var(--gless-color-grey2)!important;
+}
+
+.background-info-font-color {
+  background-color: var(--gless-color-grey1);
+}
+.rc-header--room {
+  box-shadow: none;
+  border-bottom: 1px solid var(--gless-color-border);
+  padding: 9px 24px;
+}
+/* new elements */
+/**/
+.gless-sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  height: 56px;
+}
+.gless-sidebar-logo {
+  flex: 1;
+}
+
+/* chat detail */
+.rc-message-box {
+  border-top: 1px solid var(--gless-color-border);
+}
+
+/* button */
+.button,
+.rc-button {
+  /*height: 34px;*/
+  min-width: 100px;
+  width: auto;
+}

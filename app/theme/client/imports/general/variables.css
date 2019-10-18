@@ -36,28 +36,46 @@
 	--color-gray-lightest: #f2f3f5;
 	--color-black: #000000;
 	--color-white: #ffffff;
-	--rc-color-error: var(--color-red);
-	--rc-color-error-light: #e1364c;
-	--rc-color-alert: var(--color-yellow);
-	--rc-color-alert-light: var(--color-dark-yellow);
-	--rc-color-success: var(--color-green);
-	--rc-color-success-light: #25d198;
-	--rc-color-button-primary: var(--color-blue);
-	--rc-color-button-primary-light: var(--color-dark-blue);
-	--rc-color-alert-message-primary: var(--color-blue);
-	--rc-color-alert-message-primary-background: #f1f6ff;
-	--rc-color-alert-message-secondary: #7ca52b;
+	/*--rc-color-error: var(--color-red);*/
+	--rc-color-error: var(--gless-color-primary)!important;	
+	/*--rc-color-error-light: #e1364c;*/
+	--rc-color-error-light: var(--gless-color-primary-lighten-35)!important;
+	/*--rc-color-alert: var(--color-yellow);*/
+	--rc-color-alert: var(--gless-color-primary-lighten-35)!important;	
+	/*--rc-color-alert-light: var(--color-dark-yellow);*/
+	--rc-color-alert-light: var(--gless-color-primary-lighten-35)!important;	
+	/*--rc-color-success: var(--color-green);*/
+	--rc-color-success: var(--gless-color-green)!important;
+	/*--rc-color-success-light: #25d198;*/
+	--rc-color-success-light: var(--gless-color-green)!important;
+	/*--rc-color-button-primary: var(--color-blue);*/
+	--rc-color-button-primary: var(--gless-color-primary)!important;	
+	/*--rc-color-button-primary-light: var(--color-dark-blue);*/
+	--rc-color-button-primary-light: var(--gless-color-primary)!important;
+	/*--rc-color-alert-message-primary: var(--color-blue);*/
+	--rc-color-alert-message-primary: var(--gless-color-primary)!important;
+	/*--rc-color-alert-message-primary-background: #f1f6ff;*/
+	--rc-color-alert-message-primary-background: #E2E2E2;	
+	/*--rc-color-alert-message-secondary: #7ca52b;*/
+	--rc-color-alert-message-secondary: var(--gless-color-green);
 	--rc-color-alert-message-secondary-background: #fafff1;
 	--rc-color-alert-message-warning: #d52d24;
 	--rc-color-alert-message-warning-background: #fff3f3;
-	--rc-color-primary: var(--color-dark);
-	--rc-color-primary-darkest: var(--color-darkest);
-	--rc-color-primary-dark: var(--color-dark-medium);
-	--rc-color-primary-light: var(--color-gray);
-	--rc-color-primary-light-medium: var(--color-gray-medium);
-	--rc-color-primary-lightest: var(--color-gray-lightest);
+	/*--rc-color-primary: var(--color-dark);*/
+	--rc-color-primary: var(--gless-color-primary)!important;
+	/*--rc-color-primary-darkest: var(--color-darkest);*/
+	--rc-color-primary-darkest: var(--gless-color-list-item-background)!important;
+	/*--rc-color-primary-dark: var(--color-dark-medium);*/
+	--rc-color-primary-dark: var(--gless-color-primary)!important;
+	/*--rc-color-primary-light: var(--color-gray);*/
+	--rc-color-primary-light: var(--gless-color-primary)!important;
+	/*--rc-color-primary-light-medium: var(--color-gray-medium);*/
+	--rc-color-primary-light-medium: var(--gless-color-primary)!important;;
+	/*--rc-color-primary-lightest: var(--color-gray-lightest);*/
+	--rc-color-primary-lightest: var(--gless-color-primary)!important;
 	--rc-color-content: var(--color-white);
-	--rc-color-link-active: var(--rc-color-button-primary);
+	/*--rc-color-link-active: var(--rc-color-button-primary);*/
+	--rc-color-link-active: var(--gless-color-text)!important;
 
 	/*
 	* General
@@ -71,9 +89,9 @@
 	--flex-tab-webrtc-width: 400px;
 	--flex-tab-webrtc-2-width: 850px;
 	--user-image-square: 20px;
-	--border: 2px;
-	--border-radius: 2px;
-	--status-online: var(--rc-color-success);
+	--border: 1px;
+	--border-radius: 5px;	
+	--status-online: var(--rc-color-success);	
 	--status-away: var(--rc-color-alert);
 	--status-busy: var(--rc-color-error);
 	--status-invisible: var(--color-gray-medium);
@@ -124,8 +142,10 @@
 	--button-primary-background: var(--rc-color-button-primary);
 	--button-primary-text-color: var(--color-white);
 	--button-cancel-color: var(--rc-color-error);
-	--button-secondary-background: var(--color-gray-medium);
-	--button-secondary-text-color: var(--color-dark-medium);
+	/*--button-secondary-background: var(--color-gray-medium);*/
+	--button-secondary-background: var(--gless-color-primary)!important;
+	/*--button-secondary-text-color: var(--color-dark-medium);*/
+	--button-secondary-text-color: var(--color-white)!important;
 
 	/*
 	* Forms - Input
@@ -133,15 +153,17 @@
 	--input-font-size: 0.875rem;
 	--input-title-text-size: var(--input-font-size);
 	--input-title-color: #2d343d;
-	--input-text-color: var(--color-dark-medium);
-	--input-placeholder-color: var(--color-gray-medium);
-	--input-icon-color: var(--color-dark);
-	--input-border-color: var(--color-gray-light);
+	--input-text-color: #000;
+	/*--input-placeholder-color: var(--color-gray-medium);*/
+	--input-placeholder-color: var(--gless-color-placeholder);
+	--input-icon-color: var(--gless-color-text);
+	/*--input-border-color: var(--color-gray-light);*/
+	--input-border-color: var(--gless-color-input-border);
 	--input-border-width: var(--border);
 	--input-border-radius: var(--border-radius);
 	--input-description-text-color: var(--color-gray);
 	--input-description-text-size: var(--input-font-size);
-	--input-error-color: var(--rc-color-error);
+	--input-error-color: var(--luecolor-error);
 
 	/*
 	* Forms - popup list
@@ -174,12 +196,19 @@
 	/*
 	* Sidebar
 	*/
+	/*--sidebar-width: 280px;*/
 	--sidebar-width: 280px;
 	--sidebar-small-width: 90%;
-	--sidebar-background: var(--rc-color-primary);
+	/*--sidebar-background: var(--rc-color-primary);*/
+	--sidebar-background: #fff;
+	/*
 	--sidebar-background-hover: var(--rc-color-primary-dark);
 	--sidebar-background-light: var(--rc-color-primary-lightest);
 	--sidebar-background-light-hover: var(--rc-color-primary-light);
+	*/
+	--sidebar-background-hover: #fff;
+	--sidebar-background-light: #fff;
+	--sidebar-background-light-hover: #fff;
 	--sidebar-default-padding: 24px;
 	--sidebar-small-default-padding: 16px;
 	--sidebar-extra-small-default-padding: 12px;
@@ -190,7 +219,8 @@
 	* Sidebar flex
 	*/
 	--sidebar-flex-search-background: var(--color-white);
-	--sidebar-flex-search-placeholder-color: var(--color-gray);
+	/*--sidebar-flex-search-placeholder-color: var(--color-gray);*/
+	--sidebar-flex-search-placeholder-color: var(--gless-color-placeholder);
 
 	/*
 	* Sidebar Account
@@ -218,12 +248,16 @@
 	--sidebar-item-thumb-size: 18px;
 	--sidebar-item-thumb-size-medium: 27px;
 	--sidebar-item-thumb-size-extended: 36px;
-	--sidebar-item-text-color: var(--rc-color-primary-light);
+	/*--sidebar-item-text-color: var(--rc-color-primary-light);*/
+	--sidebar-item-text-color: var(--gless-color-icon);
 	--sidebar-item-background: inherit;
 	--sidebar-item-hover-background: var(--rc-color-primary-darkest);
-	--sidebar-item-active-background: var(--rc-color-primary-dark);
+	/*--sidebar-item-hover-background: var(--gless-color-list-item-background);*/
+	/*--sidebar-item-active-background: var(--rc-color-primary-dark);*/
+	--sidebar-item-active-background: var(--gless-color-list-item-background);
 	--sidebar-item-active-color: var(--sidebar-item-text-color);
-	--sidebar-item-unread-color: var(--rc-color-content);
+	/*--sidebar-item-unread-color: var(--rc-color-content);*/
+	--sidebar-item-unread-color: var(--gless-color-text);
 	--sidebar-item-unread-font-weight: 600;
 	--sidebar-item-popup-background: var(--rc-color-primary-dark);
 	--sidebar-item-user-status-size: 6px;
@@ -249,18 +283,24 @@
 	/*
 	* Toolbar
 	*/
-	--toolbar-placeholder-color: var(--color-gray);
+	/*--toolbar-placeholder-color: var(--color-gray);*/
+	--toolbar-placeholder-color: var(--gless-color-placeholder);
 
 	/*
 	* Rooms list
-	*/
-	--rooms-list-title-color: var(--color-gray);
-	--rooms-list-title-text-size: 0.75rem;
-	--rooms-list-empty-text-color: var(--color-gray);
-	--rooms-list-empty-text-size: 0.75rem;
+	*/	
+	/*--rooms-list-title-color: var(--color-gray);*/
+	--rooms-list-title-color: var(--gless-color-text);
+	/*--rooms-list-title-text-size: 0.75rem;*/
+	--rooms-list-title-text-size: 1rem;
+	/*--rooms-list-empty-text-color: var(--color-gray);*/
+	--rooms-list-empty-text-color: var(--gless-color-text);
+	/*--rooms-list-empty-text-size: 0.75rem;*/
+	--rooms-list-empty-text-size: 1rem;
 	--rooms-list-padding: var(--sidebar-default-padding);
 	--rooms-list-small-padding: var(--sidebar-small-default-padding);
 
+	
 	/*
 	* Chip
 	*/
@@ -299,18 +339,20 @@
 	* Message box
 	*/
 	--message-box-text-size: var(--input-font-size);
-	--message-box-placeholder-color: var(--color-gray-medium);
+	/*--message-box-placeholder-color: var(--color-gray-medium);*/
+	--message-box-placeholder-color: var(--gless-color-placeholder);
 	--message-box-markdown-color: var(--color-gray);
 	--message-box-markdown-hover-color: var(--color-dark);
 	--message-box-user-typing-color: var(--color-gray);
 	--message-box-user-typing-text-size: 0.75rem;
 	--message-box-user-typing-user-color: var(--color-dark);
-	--message-box-container-border-color: var(--color-gray-medium);
-	--message-box-container-border-width: var(--border);
+	--message-box-container-border-color: var(--gless-color-grey2);
+	/*--message-box-container-border-width: var(--border);*/
+	--message-box-container-border-width: 1px;
 	--message-box-container-border-radius: var(--border-radius);
 	--message-box-editing-color: #fff5df;
-	--message-box-popover-title-text-color: var(--color-gray);
-	--message-box-popover-title-text-size: 0.75rem;
+	--message-box-popover-title-text-color: var(--gless-color-text);
+	--message-box-popover-title-text-size: 1rem;
 
 	/*
 	* Header
@@ -344,18 +386,19 @@
 	--popover-background: var(--color-white);
 	--popover-column-min-width: 130px;
 	--popover-column-padding: 1rem;
-	--popover-title-color: var(--color-dark);
-	--popover-title-text-size: 0.75rem;
-	--popover-item-color: var(--color-dark);
-	--popover-item-text-size: 0.875rem;
-	--popover-divider-height: 2px;
-	--popover-divider-color: var(--color-gray-light);
+	--popover-title-color: var(--gless-color-text);
+	--popover-title-text-size: 14px;
+	/*--popover-title-text-size: .75rem;*/
+	--popover-item-color: var(--gless-color-text);
+	--popover-item-text-size: 14px;
+	--popover-divider-height: 1px;
+	--popover-divider-color: var(--gless-color-border);
 
 	/*
 	* Tooltip
 	*/
-	--tooltip-background: var(--color-darkest);
-	--tooltip-text-color: var(--color-white);
+	--tooltip-background: var(--gless-color-grey3);
+	--tooltip-text-color: var(--gless-color-text);
 	--tooltip-text-size: 0.75rem;
 	--tooltip-radius: var(--border-radius);
 
@@ -375,4 +418,52 @@
 	*/
 	--badge-size: 14px;
 	--badge-font-size: 0.625rem;
+
+	/*
+	* custom overridings
+	*/
+	--rcx-button-primary-background-color: var(--gless-color-primary)!important;
+	--rcx-button-primary-disabled-background-color: var(--gless-color-primary-disabled)!important;
+	--rcx-button-primary-hover-background-color: var(--gless-color-primary)!important;
+
+	--rcx-button-primary-active-background-color: var(--gless-color-primary)!important;	
+	--rcx-button-primary-active-border-color: var(--gless-color-primary-disabled)!important;
+	--rcx-button-primary-active-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+	--rcx-button-primary-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-button-primary-focus-border-color: var(--gless-color-primary-disabled)!important;
+	--rcx-button-primary-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+	--rcx-input-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-input-focus-shadow: var(--gless-color-primary-lighten-35)!important;
+	--rcx-input-focus-caret-color: var(--gless-color-primary)!important;
+	--rcx-input-focus-icon-color: var(--gless-color-primary)!important;	
+
+	--rcx-radio-button-checked-hover-background-color: var(--gless-color-primary)!important;
+	--rcx-radio-button-checked-background-color: var(--gless-color-primary)!important;
+	--rcx-radio-button-checked-border-color: var(--gless-color-primary)!important;
+
+	--rcx-radio-button-checked-active-background-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-active-border-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-active-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+	--rcx-radio-button-checked-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-radio-button-checked-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;
+
+
+	--rcx-check-box-checked-background-color: var(--gless-color-primary)!important;
+	--rcx-check-box-checked-hover-background-color: var(--gless-color-primary)!important;	
+
+	--rcx-check-box-checked-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-checked-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-checked-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;	
+
+	--rcx-check-box-focus-background-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-focus-border-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-focus-shadow-color: var(--gless-color-primary-lighten-35)!important;		
+
+	--rcx-check-box-checked-active-background-color: var(--gless-color-primary)!important;
+	--rcx-check-box-checked-active-border-color: var(--gless-color-primary)!important;	
+	--rcx-check-box-checked-active-shadow-color: var(--gless-color-primary-lighten-35)!important;
 }

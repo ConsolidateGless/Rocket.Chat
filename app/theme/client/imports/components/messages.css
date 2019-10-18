@@ -197,7 +197,8 @@
 	.message {
 		&:hover,
 		&.active {
-			background-color: rgba(15, 34, 0, 0.05);
+			/*background-color: rgba(15, 34, 0, 0.05);*/
+			background-color: var(--gless-color-list-item-background);
 
 			& .message-actions {
 				display: flex;

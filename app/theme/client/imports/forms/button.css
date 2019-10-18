@@ -83,7 +83,8 @@
 	&--primary {
 		color: var(--button-primary-text-color);
 		border: 0;
-		background-color: var(--button-primary-background);
+		/*background-color: var(--button-primary-background);*/
+		background-color: var(--gless-color-primary);
 	}
 
 	&--nude {
