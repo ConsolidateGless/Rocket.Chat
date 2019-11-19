@@ -40,8 +40,8 @@
 	--rc-color-error-light: #e1364c;
 	--rc-color-alert: var(--color-yellow);
 	--rc-color-alert-light: var(--color-dark-yellow);
-	--rc-color-success: var(--color-green);
-	--rc-color-success-light: #25d198;
+	--rc-color-success: var(--gless-color-green);
+	--rc-color-success-light: var(--gless-color-green);
 	--rc-color-button-primary: var(--color-blue);
 	--rc-color-button-primary-light: var(--color-dark-blue);
 	--rc-color-alert-message-primary: var(--color-blue);

@@ -321,18 +321,24 @@
 	--badge-text-size: 0.75rem;
 	--badge-background: var(--rc-color-primary-dark);
 	--badge-unread-background: var(--rc-color-primary-dark);
-	--badge-user-mentions-background: var(--color-dark-blue);
+	/*--badge-user-mentions-background: var(--color-dark-blue);*/
+	--badge-user-mentions-background: var(--gless-color-primary);
 	--badge-group-mentions-background: var(--rc-color-primary-dark);
 
 	/*
 	* Mention link
 	*/
 	--mention-link-radius: 10px;
-	--mention-link-background: var(--color-lighter-blue);
-	--mention-link-text-color: var(--color-dark-blue);
-	--mention-link-me-background: var(--color-dark-blue);
-	--mention-link-me-text-color: var(--color-white);
-	--mention-link-group-background: var(--rc-color-primary-dark);
+	/*--mention-link-background: var(--color-lighter-blue);*/
+	--mention-link-background: var(--gless-color-primary-lighten-35);
+	--mention-link-text-color: var(--color-black);
+
+	/*--mention-link-me-background: var(--color-dark-blue);*/
+	--mention-link-me-background: var(--gless-color-primary-lighten-35);
+	--mention-link-me-text-color: var(--color-black);
+	
+	/*--mention-link-group-background: var(--rc-color-primary-dark);*/
+	--mention-link-group-background: var(--gless-color-primary);
 	--mention-link-group-text-color: var(--color-white);
 
 	/*

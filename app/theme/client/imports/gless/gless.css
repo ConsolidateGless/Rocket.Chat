@@ -133,3 +133,23 @@ body {
   min-width: 100px;
   width: auto;
 }
+
+/* online status */
+.popup-user-status-online {
+  background: var(--gless-color-green)!important;
+  border-color: var(--gless-color-green)!important;
+}
+
+/* textarea */
+
+/* increase padding-top to center text at send-message field */
+.rc-message-box__textarea {
+  padding-top: 2px;
+}
+
+/* rooms list type */
+
+.rooms-list__type-text {
+  font-weight: normal;
+  font-family: 'SurtMedium';
+}
