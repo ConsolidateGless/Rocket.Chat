@@ -140,6 +140,24 @@ body {
   border-color: var(--gless-color-green)!important;
 }
 
+/* busy status */
+.popup-user-status-busy {
+  background: var(--gless-color-primary-darken-8)!important;
+  border-color: var(--gless-color-primary-darken-8)!important;
+}
+
+/* away status */
+.popup-user-status-away {
+  background: var(--gless-color-primary-lighten-35)!important;
+  border-color: var(--gless-color-primary-lighten-35)!important;
+}
+
+/* offline status */
+.popup-user-status-offline {
+  background: var(---status-invisible)!important;
+  border-color: var(--status-invisible)!important;
+}
+
 /* textarea */
 
 /* increase padding-top to center text at send-message field */
