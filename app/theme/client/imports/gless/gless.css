@@ -171,3 +171,8 @@ body {
   font-weight: normal;
   font-family: 'SurtMedium';
 }
+
+/* cons link */
+a.conslink {
+  color: var(--gless-color-primary)!important;
+}
