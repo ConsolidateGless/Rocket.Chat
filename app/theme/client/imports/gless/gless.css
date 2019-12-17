@@ -94,7 +94,7 @@ body {
 .attachment-download-icon,
 .collapse-switch
  {
-  color: var(--gless-color-text)!important;
+  color: var(--gless-color-primary)!important;
 }
 
 .background-info-font-color {
@@ -170,9 +170,4 @@ body {
 .rooms-list__type-text {
   font-weight: normal;
   font-family: 'SurtMedium';
-}
-
-/* cons link */
-a.conslink {
-  color: var(--gless-color-primary)!important;
 }
