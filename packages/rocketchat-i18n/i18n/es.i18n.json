@@ -2936,5 +2936,10 @@
   "Your_password_is_wrong": "¡Su contraseña es incorrecta!",
   "Your_push_was_sent_to_s_devices": "Su push fue enviado a los dispositivos %s",
   "Your_server_link": "Su enlace de servidor",
-  "Your_workspace_is_ready": "Su espacio de trabajo está listo para usar 🎉"
+  "Your_workspace_is_ready": "Su espacio de trabajo está listo para usar 🎉",
+  "Create_Activity": "Crear activid",
+  "Create_Activity_Subject": "Mensaje(s) seleccionado(s) del chat con: %s",
+  "Click_here_to_clear_the_selection": "Haga clic aquí para borrar la selección.",
+  "Click_the_messages_you_want_to_use_to_create_an_activity": "Selecciona los mensajes con los que te gustaría crear una actividad.",
+  "Messages_selected": "Mensaje(s) seleccionado(s)"
 }
