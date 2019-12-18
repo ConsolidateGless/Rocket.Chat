@@ -521,6 +521,8 @@
   "clear_history": "Löschen Sie die Geschichte",
   "Click_here": "Hier klicken",
   "Click_here_for_more_info": "Klicken Sie hier für weitere Informationen",
+  "Click_here_to_clear_the_selection": "Klicken Sie hier, um die Auswahl zu löschen",
+  "Click_the_messages_you_want_to_use_to_create_an_activity": "Klicken Sie auf die Nachrichten, mit denen Sie eine Aktivität erstellen möchten",
   "Click_the_messages_you_would_like_to_send_by_email": "Klicken Sie auf die Nachrichten, die Sie per E-Mail senden möchten",
   "Click_to_join": "Klicken Sie auf Anmelden!",
   "Client_ID": "Client-ID",
@@ -806,6 +808,8 @@
   "Country_Zimbabwe": "Zimbabwe",
   "Cozy": "Angenehm",
   "Create": "Erstellen",
+  "Create_Activity": "Aktivität erstellen",
+  "Create_Activity_Subject": "Ausgewählte Nachricht(en) aus dem Chat mit: %s",
   "create-c": "Erstelle öffentliche Kanäle",
   "create-c_description": "Berechtigung zum Erstellen öffentlicher Kanäle",
   "create-d": "Erstellen Sie direkte Nachrichten",
@@ -2844,5 +2848,6 @@
   "Your_password_is_wrong": "Falsches Passwort",
   "Your_push_was_sent_to_s_devices": "Die Push-Nachricht wurde an %s Geräte gesendet.",
   "Your_server_link": "Ihre Serververbindung",
-  "Your_workspace_is_ready": "Ihr Arbeitsbereich ist einsatzbereit 🎉"
+  "Your_workspace_is_ready": "Ihr Arbeitsbereich ist einsatzbereit 🎉",
+  "Messages_selected": "Nachricht(en) ausgewählt"
 }

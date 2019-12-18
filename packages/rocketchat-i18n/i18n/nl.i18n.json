@@ -3047,5 +3047,10 @@
   "Your_password_is_wrong": "Je wachtwoord is verkeerd!",
   "Your_push_was_sent_to_s_devices": "Je push werd verzonden naar %s apparaten",
   "Your_server_link": "Uw serverlink",
-  "Your_workspace_is_ready": "Uw werkruimte is klaar voor gebruik 🎉"
+  "Your_workspace_is_ready": "Uw werkruimte is klaar voor gebruik 🎉",
+  "Create_Activity": "Maak activiteit",
+  "Create_Activity_Subject": "Geselecteerde berichten uit de chat met: %s",
+  "Click_here_to_clear_the_selection": "Klik hier om de selectie leeg te maken",
+  "Click_the_messages_you_want_to_use_to_create_an_activity": "Selecteer de berichten waarmee u een activiteit wilt maken.",
+  "Messages_selected": "Bericht(en) geselecteerd"
 }

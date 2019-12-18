@@ -2851,5 +2851,10 @@
   "Your_password_is_wrong": "La password è sbagliata!",
   "Your_push_was_sent_to_s_devices": "La tua richiesta è stata inviata ai %s dispositivi.",
   "Your_server_link": "Il tuo collegamento al server",
-  "Your_workspace_is_ready": "Il tuo spazio di lavoro è pronto per l'uso 🎉"
+  "Your_workspace_is_ready": "Il tuo spazio di lavoro è pronto per l'uso 🎉",
+  "Create_Activity": "Crea attività",
+  "Create_Activity_Subject": "Messaggi selezionati dalla chat con: %s",
+  "Click_here_to_clear_the_selection": "Clicca qui per cancellare la selezione",
+  "Click_the_messages_you_want_to_use_to_create_an_activity": "Seleziona i messaggi con cui desideri creare un'attività.",
+  "Messages_selected": "Messaggio/i selezionato/i"
 }

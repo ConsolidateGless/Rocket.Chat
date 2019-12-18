@@ -1,0 +1,47 @@
+<template name="createActivityInstructions">
+	<main class="rc-user-info__scroll">
+		{{#if selectedMessages}}
+			<div class="mail-messages__instructions mail-messages__instructions--selected">
+				<div class="mail-messages__instructions-wrapper">
+					{{> icon block="mail-messages__instructions-icon rc-icon--default-size" icon="checkmark-circled"}}
+					<div class="mail-messages__instructions-text">
+							<span class="mail-messages__instructions-text-selected">{{selectedMessages.length}} {{_ "Messages_selected" }}</span>
+							<span>{{_ "Click_here_to_clear_the_selection"}}</span>
+					</div>
+				</div>
+			</div>
+		{{else}}
+			<div class="mail-messages__instructions">
+				<div class="mail-messages__instructions-wrapper">
+					{{> icon block="mail-messages__instructions-icon rc-icon--default-size" icon="hand-pointer"}}
+					<div class="mail-messages__instructions-text">
+							{{_ "Click_the_messages_you_want_to_use_to_create_an_activity"}}
+					</div>
+				</div>
+			</div>
+		{{/if}}
+		<div class="rc-input">
+			<label class="rc-input__label">
+				<div class="rc-input__title">{{_ "Subject"}}</div>
+				<div class="rc-input__wrapper">
+					<div class="rc-input__icon">
+						{{> icon block="rc-input__icon-svg rc-icon--default-size" icon="edit"}}
+					</div>
+					<input type="text" class="rc-input__element" value="{{_ "Create_Activity_Subject" roomName}}" name="subject" autocomplete="off"/>
+				</div>
+			</label>
+		</div>
+
+		{{#if errorMessage}}
+			<div class="mail-messages__instructions mail-messages__instructions--warning">
+				<div class="mail-messages__instructions-wrapper">
+					<div class="mail-messages__instructions-text">{{errorMessage}}</div>
+				</div>
+			</div>
+		{{/if}}
+	</main>
+	<div class="rc-user-info__flex rc-user-info__row">
+		<button class="rc-button rc-button--outline js-cancel" title="{{_ 'Cancel'}}">{{_ 'Cancel'}}</button>
+		<button class="rc-button rc-button--primary js-send" title="{{_ 'Create'}}">{{_ 'Create'}}</button>
+	</div>
+</template>

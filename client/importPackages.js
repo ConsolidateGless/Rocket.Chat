@@ -7,6 +7,7 @@ import '../app/autotranslate/client';
 import '../app/cas/client';
 import '../app/channel-settings';
 import '../app/channel-settings-mail-messages/client';
+import '../app/channel-settings-create-activity/client';
 import '../app/cloud/client';
 import '../app/colors/client';
 import '../app/crowd/client';

@@ -595,9 +595,11 @@
   "clear_history": "Verlauf löschen",
   "Click_here": "Hier klicken",
   "Click_here_for_more_info": "Für weitere Informationen hier klicken",
+  "Click_here_to_clear_the_selection": "Klicken Sie hier, um die Auswahl zu löschen",
+  "Click_the_messages_you_want_to_use_to_create_an_activity": "Klicken Sie auf die Nachrichten, mit denen Sie eine Aktivität erstellen möchten",
+  "Click_the_messages_you_would_like_to_send_by_email": "Klicken Sie auf die Nachrichten, die Sie per E-Mail senden möchten",
   "Click_here_to_enter_your_encryption_password": "Hier klicken, um Ihr Verschlüsselungs-Passwort einzugeben",
   "Click_here_to_view_and_copy_your_password": "Hier klicken, um Ihr Passwort anzuzeigen und zu kopieren",
-  "Click_the_messages_you_would_like_to_send_by_email": "Klicken Sie auf die Nachrichten, die Sie per E-Mail senden möchten",
   "Click_to_join": "Hier klicken um teilzunehmen!",
   "Client_ID": "Client-ID",
   "Client_Secret": "Client-Geheimnis",
@@ -920,6 +922,8 @@
   "Country_Zimbabwe": "Simbabwe",
   "Cozy": "Angenehm",
   "Create": "Anlegen",
+  "Create_Activity": "Aktivität erstellen",
+  "Create_Activity_Subject": "Ausgewählte Nachricht(en) aus dem Chat mit: %s",
   "create-c": "Öffentliche Kanäle anlegen",
   "create-c_description": "Berechtigung, öffentliche Kanäle anzulegen",
   "create-d": "Direktnachrichten anlegen",
@@ -3297,5 +3301,6 @@
   "Your_push_was_sent_to_s_devices": "Eine Push-Nachricht wurde an %s Geräte gesendet.",
   "Your_question": "Ihre Frage",
   "Your_server_link": "Ihre Serververbindung",
-  "Your_workspace_is_ready": "Ihr Arbeitsbereich ist einsatzbereit 🎉"
+  "Your_workspace_is_ready": "Ihr Arbeitsbereich ist einsatzbereit 🎉",
+  "Messages_selected": "Nachricht(en) ausgewählt"
 }

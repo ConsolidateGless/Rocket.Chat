@@ -3077,5 +3077,10 @@
   "Your_push_was_sent_to_s_devices": "Votre notification a été envoyée à %s appareils",
   "Your_question": "Votre question",
   "Your_server_link": "Le lien de votre serveur",
-  "Your_workspace_is_ready": "Votre espace de travail est prêt à l'emploi 🎉"
+  "Your_workspace_is_ready": "Votre espace de travail est prêt à l'emploi 🎉",
+  "Create_Activity": "Créer activité",
+  "Create_Activity_Subject": "Message (s) sélectionné (s) dans le chat avec: %s",
+  "Click_here_to_clear_the_selection": "Cliquez ici pour effacer la sélection",
+  "Click_the_messages_you_want_to_use_to_create_an_activity": "Sélectionnez les messages avec lesquels vous souhaitez créer une activité.",
+  "Messages_selected": "Message(s) sélectionné(s)"
 }
