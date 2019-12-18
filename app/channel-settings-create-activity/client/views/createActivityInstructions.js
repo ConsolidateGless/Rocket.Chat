@@ -32,52 +32,74 @@ Template.createActivityInstructions.events({
 			return false;
 		}
 
-		const renderMessage = function (message) {
+		const messages = Object.values(selectedMessagesHtml);
+		const sortedByDate = messages.sort((a, b) => a.timestamp - b.timestamp);
+
+		const renderMessage = function(message) {
 			return `
 				<tr>
-					<td>${ message.time}</td>
-					<td>${ message.wholeName}</td>
-					<td>${ message.body}</td>
+					<td>${ message.time }</td>
+					<td>${ message.wholeName }</td>
+					<td>${ message.body }</td>
 				</tr>
 			`;
 		};
 
-		const messages = Object.values(selectedMessagesHtml);
-		const sortedByDate = messages.sort((a, b) => a.timestamp - b.timestamp);
-		let html = `
+		const html = `
 		<br />
 			<table  style='border:none' cellspacing='5' cellpadding='5' border='0'>
-			 ${ sortedByDate.map(renderMessage).join('')}
+			 ${ sortedByDate.map(renderMessage).join('') }
 			</table>
 			<span></span>
 		`;
 		const elem = document.createElement('div');
 		elem.innerHTML = html;
 		elem.querySelectorAll('.copyonly').forEach((r) => r.remove());
-		console.log(elem.innerHTML);
 
+		// Representation of input parameters of xml_newakt(...)
 		const obj = {
-			param1: subject,
-			param2: '',
-			param3: 0,
-			param4: '',
-			param5: '',
-			param6: '',
-			param7: '',
-			param8: '',
-			param9: '',
-			param10: '',
-			param11: elem.innerHTML,
+			mSAkt: subject,
+			mText: '',
+			mAktType: 0,
+			mFile: '',
+			mMailadresse: '',
+			mProject: '',
+			mANRs: '',
+			mCIDs: '',
+			mPrevAkt: '',
+			mFaxnummer: '',
+			mlComment: elem.innerHTML,
+			mCCsIntern: '',
+			mObjects: '',
+			mANRsMandant: '',
+			mCIDsMandant: '',
+			mNoDialog: '',
+			mResp: '',
+			mAlternMailsender: '',
+			mBrickID: '',
+			mStatus: '',
+			mRecordEffort: '',
+			mEffortTime: '',
+			mTodoDate: '',
+			mRemindDate: '',
+			mTodoType: '',
+			mSecGroup: '',
+			mMailCCs: '',
+			mMailBCCs: '',
+			mMailType: '',
+			mDontDoConsInfo: '',
+			mAktCreatedBy: '',
+			mCustomData: '',
 		};
-		let total = 'consxml:newakt?';
-		total += Object.values(obj).join(';');
-		window.location.href = total;
+		let consXmlUrl = 'consxml:newakt?';
+		consXmlUrl += Object.values(obj).join(';');
+		window.location.href = consXmlUrl;
 	},
 });
 
-Template.createActivityInstructions.onRendered(function () {
+Template.createActivityInstructions.onRendered(function() {
 	const { selectedMessages, selectedMessagesHtml } = this;
-	$('.messages-box .message').on('click', function () {
+	$('.messages-box .message').on('click', function() {
 		const { id } = this;
 		const messages = selectedMessages.get();
 		if ($(this).hasClass('selected')) {
@@ -94,7 +116,7 @@ Template.createActivityInstructions.onRendered(function () {
 	});
 });
 
-Template.createActivityInstructions.onCreated(function () {
+Template.createActivityInstructions.onCreated(function() {
 	resetSelection(true);
 
 	this.selectedMessages = new ReactiveVar([]);
@@ -109,6 +131,6 @@ Template.createActivityInstructions.onCreated(function () {
 	};
 });
 
-Template.createActivityInstructions.onDestroyed(function () {
+Template.createActivityInstructions.onDestroyed(function() {
 	Template.instance().reset(false);
 });
