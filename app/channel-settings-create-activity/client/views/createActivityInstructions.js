@@ -5,6 +5,7 @@ import { Template } from 'meteor/templating';
 import { ChatRoom } from '../../../models';
 import { t, roomTypes } from '../../../utils';
 import resetSelection from '../resetSelection';
+import { fireGlobalEvent } from '../../../ui-utils';
 
 Template.createActivityInstructions.helpers({
 	roomName() {
@@ -55,46 +56,10 @@ Template.createActivityInstructions.events({
 		const elem = document.createElement('div');
 		elem.innerHTML = html;
 		elem.querySelectorAll('.copyonly').forEach((r) => r.remove());
-
-		// Representation of input parameters of xml_newakt(...)
-		// The call will not work if other propertes are defined after mlComment
-		const obj = {
-			mSAkt: subject,
-			mText: '',
-			mAktType: 0,
-			mFile: '',
-			mMailadresse: '',
-			mProject: '',
-			mANRs: '',
-			mCIDs: '',
-			mPrevAkt: '',
-			mFaxnummer: '',
-			mlComment: elem.innerHTML,
-			// mCCsIntern: '',
-			// mObjects: '',
-			// mANRsMandant: '',
-			// mCIDsMandant: '',
-			// mNoDialog: '',
-			// mResp: '',
-			// mAlternMailsender: '',
-			// mBrickID: '',
-			// mStatus: '',
-			// mRecordEffort: '',
-			// mEffortTime: '',
-			// mTodoDate: '',
-			// mRemindDate: '',
-			// mTodoType: '',
-			// mSecGroup: '',
-			// mMailCCs: '',
-			// mMailBCCs: '',
-			// mMailType: '',
-			// mDontDoConsInfo: '',
-			// mAktCreatedBy: '',
-			// mCustomData: '',
-		};
-		let consXmlUrl = 'consxml:newakt?';
-		consXmlUrl += Object.values(obj).join(';');
-		window.location.href = consXmlUrl;
+		const body = elem.innerHTML;
+		
+		fireGlobalEvent('create-activity', { subject, body });
+		instance.reset(true);
 	},
 });
 
