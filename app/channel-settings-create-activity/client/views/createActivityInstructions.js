@@ -21,10 +21,10 @@ Template.createActivityInstructions.helpers({
 });
 
 Template.createActivityInstructions.events({
-	'click .js-cancel, click .mail-messages__instructions--selected'(e, t) {
+	'click .js-cancel-activity, click .mail-messages__instructions--selected'(e, t) {
 		t.reset(true);
 	},
-	'click .js-send'(e, instance) {
+	'click .js-send-activity'(e, instance) {
 		const { selectedMessages, selectedMessagesHtml } = instance;
 		const subject = instance.$('[name="subject"]').val();
 
@@ -60,6 +60,7 @@ Template.createActivityInstructions.events({
 		
 		fireGlobalEvent('create-activity', { subject, body });
 		instance.reset(true);
+		$('.js-close').click();
 	},
 });
 
