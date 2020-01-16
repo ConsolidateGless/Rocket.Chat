@@ -60,6 +60,10 @@ settings.addGroup('Accounts', function() {
 		type: 'boolean',
 		public: true,
 	});
+	this.add('Accounts_AllowEmailNotifications', true, {
+		type: 'boolean',
+		public: true,
+	});
 	this.add('Accounts_CustomFieldsToShowInUserInfo', '', {
 		type: 'string',
 		public: true,
@@ -179,6 +183,19 @@ settings.addGroup('Accounts', function() {
 			type: 'string',
 			secret: true,
 		});
+		this.add('Accounts_Registration_InviteUrlType', 'proxy', {
+			type: 'select',
+			values: [
+				{
+					key: 'direct',
+					i18nLabel: 'Accounts_Registration_InviteUrlType_Direct',
+				}, {
+					key: 'proxy',
+					i18nLabel: 'Accounts_Registration_InviteUrlType_Proxy',
+				},
+			],
+		});
+
 		this.add('Accounts_RegistrationForm_LinkReplacementText', '', {
 			type: 'string',
 			public: true,
@@ -220,6 +237,12 @@ settings.addGroup('Accounts', function() {
 			type: 'int',
 			public: true,
 			i18nLabel: 'Notification_Duration',
+		});
+		this.add('Accounts_Default_User_Preferences_desktopNotificationRequireInteraction', false, {
+			type: 'boolean',
+			public: true,
+			i18nLabel: 'Notification_RequireInteraction',
+			i18nDescription: 'Notification_RequireInteraction_Description',
 		});
 		this.add('Accounts_Default_User_Preferences_audioNotifications', 'all', {
 			type: 'select',
@@ -352,7 +375,7 @@ settings.addGroup('Accounts', function() {
 		this.add('Accounts_Default_User_Preferences_sidebarHideAvatar', false, {
 			type: 'boolean',
 			public: true,
-			i18nLabel: 'Hide_Avatars',
+			i18nLabel: 'Hide_Avatars_Sidebar',
 		});
 		this.add('Accounts_Default_User_Preferences_sidebarShowUnread', false, {
 			type: 'boolean',
@@ -416,11 +439,6 @@ settings.addGroup('Accounts', function() {
 			],
 			public: true,
 			i18nLabel: 'Email_Notification_Mode',
-		});
-		this.add('Accounts_Default_User_Preferences_roomCounterSidebar', false, {
-			type: 'boolean',
-			public: true,
-			i18nLabel: 'Show_room_counter_on_sidebar',
 		});
 		this.add('Accounts_Default_User_Preferences_newRoomNotification', 'door', {
 			type: 'select',
@@ -714,6 +732,7 @@ settings.addGroup('General', function() {
 	this.add('Show_Setup_Wizard', 'completed', {
 		type: 'select',
 		public: true,
+		readonly: true,
 		values: [
 			{
 				key: 'pending',
@@ -755,6 +774,18 @@ settings.addGroup('General', function() {
 	this.add('Allow_Invalid_SelfSigned_Certs', false, {
 		type: 'boolean',
 		secret: true,
+	});
+	this.add('Iframe_Restrict_Access', true, {
+		type: 'boolean',
+		secret: true,
+	});
+	this.add('Iframe_X_Frame_Options', 'sameorigin', {
+		type: 'string',
+		secret: true,
+		enableQuery: {
+			_id: 'Iframe_Restrict_Access',
+			value: true,
+		},
 	});
 	this.add('Favorite_Rooms', true, {
 		type: 'boolean',
@@ -815,6 +846,11 @@ settings.addGroup('General', function() {
 	this.add('Force_SSL', false, {
 		type: 'boolean',
 		public: true,
+	});
+	this.add('Support_Cordova_App', false, {
+		type: 'boolean',
+		i18nDescription: 'Support_Cordova_App_Description',
+		alert: 'Support_Cordova_App_Alert',
 	});
 	this.add('GoogleTagManager_id', '', {
 		type: 'string',
@@ -1138,6 +1174,24 @@ settings.addGroup('Push', function() {
 			value: true,
 		},
 	});
+	this.add('Push_send_interval', 5000, {
+		type: 'int',
+		public: true,
+		alert: 'Push_Setting_Requires_Restart_Alert',
+		enableQuery: {
+			_id: 'Push_enable',
+			value: true,
+		},
+	});
+	this.add('Push_send_batch_size', 10, {
+		type: 'int',
+		public: true,
+		alert: 'Push_Setting_Requires_Restart_Alert',
+		enableQuery: {
+			_id: 'Push_enable',
+			value: true,
+		},
+	});
 	this.add('Push_enable_gateway', true, {
 		type: 'boolean',
 		alert: 'Push_Setting_Requires_Restart_Alert',
@@ -1240,34 +1294,34 @@ settings.addGroup('Layout', function() {
 			type: 'string',
 			public: true,
 		});
-		//this.add('Layout_Home_Body', '<p>Welcome to Rocket.Chat!</p>\n<p>The Rocket.Chat desktops apps for Windows, macOS and Linux are available to download <a title="Rocket.Chat desktop apps" href="https://rocket.chat/download" target="_blank" rel="noopener">here</a>.</p><p>The native mobile app, Rocket.Chat,\n  for Android and iOS is available from <a title="Rocket.Chat on Google Play" href="https://play.google.com/store/apps/details?id=chat.rocket.android" target="_blank" rel="noopener">Google Play</a> and the <a title="Rocket.Chat on the App Store" href="https://itunes.apple.com/app/rocket-chat/id1148741252" target="_blank" rel="noopener">App Store</a>.</p>\n<p>For further help, please consult the <a title="Rocket.Chat Documentation" href="https://rocket.chat/docs/" target="_blank" rel="noopener">documentation</a>.</p>\n<p>If you\'re an admin, feel free to change this content via <strong>Administration</strong> &rarr; <strong>Layout</strong> &rarr; <strong>Home Body</strong>. Or clicking <a title="Home Body Layout" href="/admin/Layout">here</a>.</p>', {
+		// this.add('Layout_Home_Body', '<p>Welcome to Rocket.Chat!</p>\n<p>The Rocket.Chat desktops apps for Windows, macOS and Linux are available to download <a title="Rocket.Chat desktop apps" href="https://rocket.chat/download" target="_blank" rel="noopener">here</a>.</p><p>The native mobile app, Rocket.Chat,\n  for Android and iOS is available from <a title="Rocket.Chat on Google Play" href="https://play.google.com/store/apps/details?id=chat.rocket.android" target="_blank" rel="noopener">Google Play</a> and the <a title="Rocket.Chat on the App Store" href="https://itunes.apple.com/app/rocket-chat/id1148741252" target="_blank" rel="noopener">App Store</a>.</p>\n<p>For further help, please consult the <a title="Rocket.Chat Documentation" href="https://rocket.chat/docs/" target="_blank" rel="noopener">documentation</a>.</p>\n<p>If you\'re an admin, feel free to change this content via <strong>Administration</strong> &rarr; <strong>Layout</strong> &rarr; <strong>Home Body</strong>. Or clicking <a title="Home Body Layout" href="/admin/Layout">here</a>.</p>', {
 		this.add('', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: true,
 		});
-		//this.add('Layout_Terms_of_Service', 'Terms of Service <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
+		// this.add('Layout_Terms_of_Service', 'Terms of Service <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
 		this.add('Layout_Terms_of_Service', '', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: true,
 		});
-		//this.add('Layout_Login_Terms', 'By proceeding you are agreeing to our <a href="terms-of-service">Terms of Service</a>, <a href="privacy-policy">Privacy Policy</a> and <a href="legal-notice">Legal Notice</a>.', {
+		// this.add('Layout_Login_Terms', 'By proceeding you are agreeing to our <a href="terms-of-service">Terms of Service</a>, <a href="privacy-policy">Privacy Policy</a> and <a href="legal-notice">Legal Notice</a>.', {
 		this.add('Layout_Login_Terms', '', {
 			type: 'string',
 			multiline: true,
 			public: true,
 		});
-		//this.add('Layout_Privacy_Policy', 'Privacy Policy <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
+		// this.add('Layout_Privacy_Policy', 'Privacy Policy <br> Go to APP SETTINGS &rarr; Layout to customize this page.', {
 		this.add('Layout_Privacy_Policy', '', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: false,
 		});
-		//this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
+		// this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
 		this.add('Layout_Legal_Notice', '', {
 			type: 'code',
 			code: 'text/html',
@@ -1333,6 +1387,10 @@ settings.addGroup('Layout', function() {
 			public: true,
 		});
 		this.add('UI_Allow_room_names_with_special_chars', false, {
+			type: 'boolean',
+			public: true,
+		});
+		return this.add('UI_Show_top_navbar_embedded_layout', false, {
 			type: 'boolean',
 			public: true,
 		});
@@ -2603,6 +2661,10 @@ settings.addGroup('Setup_Wizard', function() {
 				value: true,
 			},
 			secret: true,
+		});
+
+		this.add('Cloud_Service_Agree_PrivacyTerms', false, {
+			type: 'boolean',
 		});
 
 		this.add('Cloud_Workspace_Id', '', {

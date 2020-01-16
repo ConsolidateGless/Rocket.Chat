@@ -1,7 +1,7 @@
 {
 	"name": "Rocket.Chat",
 	"description": "The Ultimate Open Source WebChat Platform",
-	"version": "2.0.0-develop",
+	"version": "2.5.0-develop",
 	"author": {
 		"name": "Rocket.Chat",
 		"url": "https://rocket.chat/"
@@ -25,9 +25,10 @@
 		"start": "meteor",
 		"debug": "meteor run --inspect",
 		"debug-brk": "meteor run --inspect-brk",
-		"lint": "meteor npm run stylelint && meteor npm run jslint",
-		"jslint": "eslint .",
-		"stylelint": "stylelint \"app/**/*.css\"",
+		"lint": "meteor npm run stylelint && meteor npm run eslint",
+		"jslint": "npm run eslint",
+		"eslint": "eslint --ext .js,.ts,.jsx,.tsx .",
+		"stylelint": "stylelint \"app/**/*.css\" \"client/**/*.css\"",
 		"test": "node .scripts/start.js",
 		"deploy": "npm run build && pm2 startOrRestart pm2.json",
 		"chimp-path": "chimp tests/chimp-config.js --path=$CHIMP_PATH",
@@ -41,7 +42,9 @@
 		"translation-fix-order": "node .scripts/fix-i18n.js",
 		"version": "node .scripts/version.js",
 		"set-version": "node .scripts/set-version.js",
-		"release": "meteor npm run set-version --silent"
+		"release": "meteor npm run set-version --silent",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
 	},
 	"license": "MIT",
 	"repository": {
@@ -87,7 +90,6 @@
 		"fast-glob": "^2.2.6",
 		"husky": "^1.2.0",
 		"i18next": "^17.0.17",
-		"inquirer": "^7.0.3",
 		"less-loader": "^5.0.0",
 		"md5": "^2.2.1",
 		"mocha": "^5.2.0",
@@ -116,9 +118,9 @@
 		"@accounts/mongo": "0.0.12",
 		"@accounts/server": "0.0.18",
 		"@babel/runtime": "^7.7.6",
-		"@google-cloud/language": "^3.7.0",
+		"@google-cloud/language": "^2.0.0",
 		"@google-cloud/storage": "^2.3.1",
-		"@google-cloud/vision": "^1.8.0",
+		"@google-cloud/vision": "^0.23.0",
 		"@rocket.chat/apps-engine": "^1.11.0",
 		"@rocket.chat/fuselage": "^0.2.0-alpha.19",
 		"@rocket.chat/fuselage-hooks": "^0.2.0-dev.50",
@@ -200,7 +202,7 @@
 		"react-dom": "^16.8.6",
 		"redis": "^2.8.0",
 		"semver": "^5.6.0",
-		"sharp": "^0.22.1",
+		"sharp": "^0.23.4",
 		"speakeasy": "^2.0.0",
 		"stream-buffers": "^3.0.2",
 		"string-strip-html": "^4.3.12",
@@ -231,9 +233,9 @@
 		}
 	},
 	"houston": {
+		"metadata": ".scripts/houstonMetadata.js",
 		"updateFiles": [
 			"package.json",
-			".travis/snap.sh",
 			".circleci/snap.sh",
 			".circleci/update-releases.sh",
 			".docker/Dockerfile",
@@ -243,5 +245,8 @@
 	},
 	"engines": {
 		"node": "12.14.1"
-	}
+	},
+	"browserslist": [
+		"last 2 versions"
+	]
 }
