@@ -251,11 +251,6 @@
 			"server": "server/main.js"
 		}
 	},
-	"husky": {
-		"hooks": {
-			"pre-push": "meteor npm run lint && meteor npm run testunit"
-		}
-	},
 	"houston": {
 		"updateFiles": [
 			"package.json",
@@ -266,5 +261,8 @@
 			".docker/Dockerfile.rhel",
 			"app/utils/rocketchat.info"
 		]
+	},
+	"engines": {
+		"node": "12.14.1"
 	}
 }
