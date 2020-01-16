@@ -236,3 +236,7 @@ button {
 .hidden {
 	display: none;
 }
+
+#rocket-chat{
+	border-top: 1px solid var(--gless-color-border);
+}
