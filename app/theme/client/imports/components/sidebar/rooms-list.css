@@ -26,6 +26,7 @@
 		color: var(--rooms-list-title-color);
 
 		font-size: var(--rooms-list-title-text-size);
+		font-family: 'SurtBold' !important;
 		align-items: center;
 		justify-content: space-between;
 

@@ -28,7 +28,7 @@
 
 	&--group {
 		color: var(--mention-link-group-text-color);
-		background-color: var(--mention-link-group-background);
+		/* background-color: var(--mention-link-group-background); */
 
 		&:hover {
 			color: var(--mention-link-group-text-color);

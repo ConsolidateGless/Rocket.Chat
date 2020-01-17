@@ -75,8 +75,8 @@ body {
 .rc-popover__title {
   text-transform: none;
 }
-.rc-popover__item-text {
-  color: var(--gless-color-text);
+.rc-popover__item{
+  color: var(--gless-color-icon);
 }
 .rc-popover__icon {
   color: var(--gless-color-icon);
