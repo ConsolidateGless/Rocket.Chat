@@ -81,7 +81,12 @@ body {
 .rc-popover__icon {
   color: var(--gless-color-icon);
 }
-
+.rc-popover__item{
+  color: #5d5d5d;
+}
+.rc-popover__item:hover{
+  color: var(--gless-color-text);
+}
 /* message */
 .message.new-day::before {
   background-color: #fff !important;
