@@ -64,8 +64,10 @@ const renderMessage = (message) => {
 		})
 		.join('');
 
-	ConsLinkAutoLinker.link(message);
-
+	if (window.isElectronWindows) {
+		ConsLinkAutoLinker.link(message);
+	}
+		
 	return message;
 };
 

@@ -138,6 +138,11 @@ Template.popover.onRendered(function() {
 	position();
 	this.position = position;
 
+	if(!window.isElectronWindows){
+		const elem = document.querySelector("[data-id='create-activity']");
+		if(elem) elem.remove();
+	}
+
 	this.firstNode.style.visibility = 'visible';
 });
 

@@ -27,3 +27,11 @@ import './startup/startup';
 import './startup/unread';
 import './startup/userSetUtcOffset';
 import './startup/usersObserve';
+
+const agent = navigator.userAgent.toLowerCase();
+if (agent.includes("windows") && agent.includes('electron/')) {
+	window.isElectronWindows = true;
+} else {
+	window.isElectronWindows = false;
+}
+console.log(agent,window.isElectronWindows);
