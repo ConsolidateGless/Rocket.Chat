@@ -73,7 +73,7 @@
 	--user-image-square: 20px;
 	--border: 2px;
 	--border-radius: 2px;
-	--status-online: var(--color-green);
+	--status-online: var(--gless-color-green);
 	--status-away: var(--rc-color-alert);
 	--status-busy: var(--rc-color-error);
 	--status-invisible: var(--color-gray-medium);

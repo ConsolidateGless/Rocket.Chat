@@ -4053,7 +4053,7 @@ rc-old select,
 
 .full-page,
 .page-loading {
-	background-color: var(--color-background);
+	background-color: var(--gless-background);
 }
 
 .rc-old.full-page {

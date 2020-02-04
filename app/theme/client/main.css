@@ -64,6 +64,10 @@
 @import 'imports/general/rtl.css';
 
 html, body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: sans-serif !important;
     letter-spacing: 0.1px;
+  }
+  
+  .rc-user-info__config-value{
+    color: var(--gless-color-primary) !important;
   }

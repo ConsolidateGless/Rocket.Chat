@@ -266,7 +266,6 @@
 			display: inline;
 
 			max-width: 100%;
-			margin-left: 4px;
 			padding-right: 48px;
 
 			word-wrap: anywhere;
@@ -282,8 +281,6 @@
 			}
 
 			& .edited {
-				margin-left: 4px;
-
 				& .icon-pencil::before {
 					margin-right: 0;
 				}
