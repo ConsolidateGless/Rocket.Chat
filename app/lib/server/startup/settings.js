@@ -751,7 +751,7 @@ settings.addGroup('General', function() {
 		i18nDescription: 'Site_Url_Description',
 		public: true,
 	});
-	this.add('Site_Name', 'Gless Chat', {
+	this.add('Site_Name', 'Consolidate Chat', {
 		type: 'string',
 		public: true,
 		wizard: {
