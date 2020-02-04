@@ -42,7 +42,7 @@
 	--rc-color-alert-light: var(--color-dark-yellow);
 	--rc-color-success: var(--gless-color-green);
 	--rc-color-success-light: var(--gless-color-green);
-	--rc-color-button-primary: var(--color-blue);
+	--rc-color-button-primary: var(--gless-color-accent);
 	--rc-color-button-primary-light: var(--color-dark-blue);
 	--rc-color-alert-message-primary: var(--color-blue);
 	--rc-color-alert-message-primary-background: #f1f6ff;
@@ -73,7 +73,7 @@
 	--user-image-square: 20px;
 	--border: 2px;
 	--border-radius: 2px;
-	--status-online: var(--gless-color-primary);
+	--status-online: var(--color-green);
 	--status-away: var(--rc-color-alert);
 	--status-busy: var(--rc-color-error);
 	--status-invisible: var(--color-gray-medium);
@@ -292,7 +292,7 @@
 	* Mention link
 	*/
 	--mention-link-radius: 10px;
-	--mention-link-background: var(--color-lighter-blue);
+	--mention-link-background: var(--gless-color-accent);
 	--mention-link-text-color: var(--color-dark-blue);
 	--mention-link-me-background: var(--color-dark-blue);
 	--mention-link-me-text-color: var(--color-white);

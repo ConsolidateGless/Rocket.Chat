@@ -175,7 +175,7 @@ button {
 
 		pointer-events: none;
 
-		background: var(--rc-color-error);
+		background: var(--gless-color-accent);
 	}
 
 	&::after {
@@ -196,7 +196,7 @@ button {
 
 		pointer-events: none;
 
-		color: var(--rc-color-error);
+		color: var(--gless-color-accent);
 
 		border-radius: 2px;
 		background: #ffffff;

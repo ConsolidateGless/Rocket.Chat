@@ -1,14 +1,9 @@
 /* Customized Version of main.css */
 /* */
-
-/* imports Themes */
-@import 'themes/light.css';
-
-/* imports Font Surt */
-@import 'assets/font/surt.css';
-
 /* General */
 @import 'imports/general/variables.css';
+/* Gless Overridings */
+@import 'imports/gless/gless.css';
 @import 'imports/general/reset.css';
 @import 'imports/general/base_old.css';
 @import 'imports/general/base.css';
@@ -68,5 +63,7 @@
 /* RTL */
 @import 'imports/general/rtl.css';
 
-/* Gless Overridings */
-@import 'imports/gless/gless.css';
+html, body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 0.1px;
+  }

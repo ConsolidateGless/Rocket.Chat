@@ -78,6 +78,13 @@
 		fill: var(--sidebar-item-text-color);
 	}
 
+		&-button:hover, &-button:active {
+		color: var(--gless-color-accent);
+
+		font-size: 20px;
+		fill: var(--gless-color-accent);
+	}
+
 	&-search {
 		position: absolute;
 		right: calc(10px + var(--sidebar-default-padding));

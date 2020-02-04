@@ -5,6 +5,48 @@ body {
   -webkit-font-smoothing: initial;
 }
 
+:root {
+  --gless-background: #FFF;
+  --gless-background-2: #F2F2F2;  
+  
+  --gless-color-text: #222; 
+  --gless-color-primary: #4C5B66;   
+  --gless-color-accent: #F9B233;   
+  --gless-color-primary-disabled: rgba(224, 83, 41, 0.6);   
+  --gless-color-primary-darken-4: #d6491f;  
+  --gless-color-primary-darken-8: #c4431c;    
+  --gless-color-primary-lighten-35: #f7d0c5;
+  --gless-color-primary-lighten-44: #fcf1ed;
+  --gless-color-primary-lighten-47: #fefbfa;
+  --gless-color-black: #000000;  
+  --gless-color-grey0: #4C4C4C;
+  --gless-color-grey1: #BABABA;
+  --gless-color-grey2: #E2E2E2;
+  --gless-color-grey3: #F2F2F2;
+  --gless-color-grey4: #CCCCCC;  
+  --gless-color-white: #FFFFFF;
+  --gless-color-green: #7CC163;
+  --gless-color-blue: #4138d6;
+
+  --gless-color-input-border: var(--gless-color-grey2);
+  --gless-color-input-autofill: var(--gless-color-grey2);
+  --gless-color-border: var(--gless-color-grey2);
+  --gless-color-border-2: var(--gless-color-grey2);
+  --gless-color-border-3: var(--gless-color-grey3);
+  --gless-color-border-4: var(--gless-color-white);
+  --gless-color-divider: var(--gless-color-grey3);
+  --gless-color-divider-text: var(--gless-color-grey1);
+  --gless-color-placeholder: var(--gless-color-grey1);
+  
+  --gless-color-icon: var(--gless-color-grey1);
+  --gless-color-icon-navigation: var(--gless-color-grey0);
+  --gless-color-icon-inactive: var(--gless-color-grey2);
+  --gless-color-icon-list: var(--gless-color-grey0);
+
+  --gless-color-list-item-background: var(--gless-color-grey3);
+  --color-blue:var(--gless-color-accent);
+}
+
 /* login page */
 .full-page {
   background-color: var(--gless-background);
@@ -85,7 +127,7 @@ body {
   color: #5d5d5d;
 }
 .rc-popover__item:hover{
-  color: var(--gless-color-text);
+  color: var(--gless-color-accent);
 }
 /* message */
 .message.new-day::before {
@@ -95,12 +137,12 @@ body {
 
 
 /* message links, at file download */
-.message a,
+/* .message a,
 .attachment-download-icon,
 .collapse-switch
  {
   color: var(--gless-color-primary)!important;
-}
+} */
 
 .background-info-font-color {
   background-color: var(--gless-color-grey2)!important;
@@ -174,5 +216,4 @@ body {
 
 .rooms-list__type-text {
   font-weight: normal;
-  font-family: 'SurtMedium';
 }

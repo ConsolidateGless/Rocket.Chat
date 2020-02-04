@@ -43,10 +43,11 @@
 	}
 
 	&--room {
-		padding: 1.25rem;
+		/* padding: 1.25rem; */
 
-		box-shadow: 0 1px 2px 0 rgba(31, 35, 41, 0.08);
-
+		/* box-shadow: 0 1px 2px 0 rgba(31, 35, 41, 0.08); */
+		display: grid;
+		align-items: center;
 		font-size: var(--header-title-font-size);
 	}
 

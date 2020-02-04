@@ -7,7 +7,7 @@
 
 	color: var(--badge-text-color);
 	border-radius: var(--badge-radius);
-	background-color: var(--badge-background);
+	background-color: var(--gless-color-accent);
 
 	font-size: var(--badge-text-size);
 	line-height: 1;
@@ -19,14 +19,14 @@
 
 		white-space: nowrap;
 
-		background-color: var(--badge-unread-background);
+		background-color: var(--gless-color-accent);
 	}
 
 	&--user-mentions {
-		background-color: var(--badge-user-mentions-background);
+		background-color: var(--gless-color-accent);
 	}
 
 	&--group-mentions {
-		background-color: var(--badge-group-mentions-background);
+		background-color: var(--gless-color-accent);
 	}
 }

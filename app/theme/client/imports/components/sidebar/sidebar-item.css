@@ -86,7 +86,7 @@
 	align-items: stretch;
 
 	&:hover {
-		background-color: var(--sidebar-item-hover-background);		
+		background-color: var(--gless-color-grey2);		
 
 		& .sidebar-item__menu {
 			display: flex;
@@ -94,7 +94,7 @@
 	}
 
 	&--active {
-		background-color: var(--sidebar-item-active-background);		
+		background-color: var(--gless-color-grey3);		
 	}
 
 	&--unread,
