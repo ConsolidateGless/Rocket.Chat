@@ -135,15 +135,6 @@ body {
   color: var(--gless-color-grey1);
 }
 
-
-/* message links, at file download */
-/* .message a,
-.attachment-download-icon,
-.collapse-switch
- {
-  color: var(--gless-color-primary)!important;
-} */
-
 .background-info-font-color {
   background-color: var(--gless-color-grey2)!important;
 }

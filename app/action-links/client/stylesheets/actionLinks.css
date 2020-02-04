@@ -8,13 +8,9 @@
 
 		& li {
 			position: relative;
-
 			display: inline;
-
 			padding-right: 2px;
-
 			list-style: none;
-
 			cursor: pointer;
 
 			& .action-link {

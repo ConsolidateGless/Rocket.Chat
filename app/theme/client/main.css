@@ -71,3 +71,7 @@ html, body {
   .rc-user-info__config-value{
     color: var(--gless-color-primary) !important;
   }
+
+  .actionLinks li, .action-link{
+    background-color: var(--gless-color-accent);
+  }

@@ -18,7 +18,7 @@
 	}
 
 	&--me {
-		color: var(--mention-link-me-text-color);
+		color: var(--gless-background);
 		background-color: var(--mention-link-me-background);
 
 		&:hover {

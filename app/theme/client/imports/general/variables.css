@@ -312,7 +312,7 @@
 	--mention-link-text-color: var(--color-black);
 
 	/*--mention-link-me-background: var(--color-dark-blue);*/
-	--mention-link-me-background: var(--gless-color-primary-lighten-35);
+	--mention-link-me-background: var(--gless-color-accent);
 	--mention-link-me-text-color: var(--color-black);
 	
 	/*--mention-link-group-background: var(--rc-color-primary-dark);*/
