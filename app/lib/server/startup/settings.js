@@ -32,11 +32,11 @@ settings.addGroup('Accounts', function() {
 			value: true,
 		},
 	});
-	this.add('Accounts_AllowUserProfileChange', false, {
+	this.add('Accounts_AllowUserProfileChange', true, {
 		type: 'boolean',
 		public: true,
 	});
-	this.add('Accounts_AllowUserAvatarChange', false, {
+	this.add('Accounts_AllowUserAvatarChange', true, {
 		type: 'boolean',
 		public: true,
 	});
@@ -795,7 +795,7 @@ settings.addGroup('General', function() {
 		type: 'string',
 		public: true,
 	});
-	this.add('Unread_Count', 'user_and_group_mentions_only', {
+	this.add('Unread_Count', 'all_messages', {
 		type: 'select',
 		values: [
 			{
@@ -888,7 +888,7 @@ settings.addGroup('General', function() {
 		});
 	});
 	this.section('Reporting', function() {
-		return this.add('Statistics_reporting', true, {
+		return this.add('Statistics_reporting', false, {
 			type: 'boolean',
 		});
 	});
@@ -1328,7 +1328,7 @@ settings.addGroup('Layout', function() {
 			multiline: true,
 			public: false,
 		});
-		return this.add('Layout_Sidenav_Footer', '<a href="/home"><img src="images/logo/logo.png"/></a>', {
+		return this.add('Layout_Sidenav_Footer', '<img src="images/logo/logo.png"/>', {
 			type: 'code',
 			code: 'text/html',
 			public: true,
@@ -1353,7 +1353,7 @@ settings.addGroup('Layout', function() {
 		});
 	});
 	return this.section('User_Interface', function() {
-		this.add('UI_DisplayRoles', true, {
+		this.add('UI_DisplayRoles', false, {
 			type: 'boolean',
 			public: true,
 		});

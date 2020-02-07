@@ -65,19 +65,19 @@ settings.addGroup('Analytics', function addSettings() {
 	});
 
 	this.section('Analytics_features_enabled', function addFeaturesEnabledSettings() {
-		this.add('Analytics_features_messages', true, {
+		this.add('Analytics_features_messages', false, {
 			type: 'boolean',
 			public: true,
 			i18nLabel: 'Messages',
 			i18nDescription: 'Analytics_features_messages_Description',
 		});
-		this.add('Analytics_features_rooms', true, {
+		this.add('Analytics_features_rooms', false, {
 			type: 'boolean',
 			public: true,
 			i18nLabel: 'Rooms',
 			i18nDescription: 'Analytics_features_rooms_Description',
 		});
-		this.add('Analytics_features_users', true, {
+		this.add('Analytics_features_users', false, {
 			type: 'boolean',
 			public: true,
 			i18nLabel: 'Users',

@@ -134,23 +134,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="rc-user-info__row rc-user-info__row--separator">
-				<div class="rc-user-info__config">
-					<div class="rc-user-info__config-header">
-						{{> icon block="rc-user-info__config-icon" icon="mail"}}
-						<span class="rc-user-info__config-label">{{_ "Email"}}</span>
-					</div>
-					<div class="rc-user-info__config-content">
-							<div class="rc-user-info__config-name">{{_ "Alerts"}}:</div>
-							{{# with "emailNotifications"}}
-							<div class="rc-user-info__config-value">
-								{{subValue 'emailNotifications'}}
-								{{> icon block="rc-user-info__config-content-icon" icon="arrow-down"}}
-							</div>
-							{{/with}}
-					</div>
-				</div>
-			</div>
+			
 		{{/if}}
 	</main>
 	<div class="rc-user-info__flex rc-user-info__row">

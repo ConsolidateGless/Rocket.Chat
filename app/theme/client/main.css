@@ -72,6 +72,29 @@ html, body {
     color: var(--gless-color-primary) !important;
   }
 
-  .actionLinks li, .action-link{
-    background-color: var(--gless-color-accent);
+  .actionLinks li, .action-link, .messega a{
+    background-color: var(--gless-color-accent) !important;
   }
+
+
+  :root{
+    --status-online: var(--gless-color-green); 
+   }
+   body{
+     font-family: sans-serif !important;
+   }
+   .message .mention-link{
+       color:var(--gless-background) !important;
+   }
+   .rc-popover__item--bold{
+     font-weight: 700;
+   }
+   .full-page{
+     background-color: var(--gless-background);
+   }
+   .message a {
+     color:var(--gless-color-accent) !important;
+   }
+   .action-link, .background-primary-action-color {
+     background-color:var(--gless-color-accent) !important;
+   }

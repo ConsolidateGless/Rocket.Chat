@@ -14,7 +14,7 @@
 			cursor: pointer;
 
 			& .action-link {
-				margin: 0 2px;
+				/* margin: 0 2px; */
 				padding: 5px;
 
 				border-radius: 7px;

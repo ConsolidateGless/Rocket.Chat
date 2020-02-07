@@ -2,7 +2,7 @@ import { settings } from '../../../settings';
 
 settings.addGroup('Accounts', function() {
 	this.section('Two Factor Authentication', function() {
-		this.add('Accounts_TwoFactorAuthentication_Enabled', true, {
+		this.add('Accounts_TwoFactorAuthentication_Enabled', false, {
 			type: 'boolean',
 			public: true,
 		});
