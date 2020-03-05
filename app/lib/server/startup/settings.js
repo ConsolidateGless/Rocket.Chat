@@ -1200,7 +1200,7 @@ settings.addGroup('Push', function() {
 			value: true,
 		},
 	});
-	this.add('Push_gateway', 'https://gateway.rocket.chat', {
+	this.add('Push_gateway', 'https://node34034-consolidategless.fra1-de.cloudjiffy.net', {
 		type: 'string',
 		i18nDescription: 'Push_gateway_description',
 		alert: 'Push_Setting_Requires_Restart_Alert',
